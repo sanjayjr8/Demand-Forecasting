@@ -235,7 +235,7 @@ with col1:
     # Data Input Card
     st.markdown('<div class="stCard">', unsafe_allow_html=True)
     st.markdown('<h3 class="section-header">Data Input</h3>', unsafe_allow_html=True)
-    uploaded_file = st.file_uploader("Upload your time series data (CSV)", type=["csv"])
+    st.markdown('<h4 style="color: white;">Upload your time series data (CSV)</h2>', unsafe_allow_html=True)
     st.markdown('</div>', unsafe_allow_html=True)
 
     if uploaded_file is not None:
