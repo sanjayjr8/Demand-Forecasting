@@ -236,6 +236,7 @@ with col1:
     st.markdown('<div class="stCard">', unsafe_allow_html=True)
     st.markdown('<h3 class="section-header">Data Input</h3>', unsafe_allow_html=True)
     st.markdown('<h4 style="color: white;">Upload your time series data (CSV)</h2>', unsafe_allow_html=True)
+    uploaded_file = st.file_uploader("", type=["csv"])
     st.markdown('</div>', unsafe_allow_html=True)
 
     if uploaded_file is not None:
@@ -254,11 +255,12 @@ with col1:
         # Seasonal Components
         st.markdown('<h4 style="color: #4299e1; margin-top: 20px;">Seasonal Components</h4>', 
                    unsafe_allow_html=True)
+        
         seasonal_order = (
             st.number_input("Seasonal AR Order", min_value=0, max_value=5, value=1),
             st.number_input("Seasonal Differencing", min_value=0, max_value=2, value=1),
             st.number_input("Seasonal MA Order", min_value=0, max_value=5, value=1),
-            12
+            
         )
         st.markdown('</div>', unsafe_allow_html=True)
 
