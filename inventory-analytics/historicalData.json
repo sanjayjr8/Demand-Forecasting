@@ -1,0 +1,2837 @@
+[
+  {
+    "date": "2024-10-22T17:32:08.166Z",
+    "stockLevels": [
+      {
+        "item": "Item 1",
+        "stock": 100
+      },
+      {
+        "item": "Item 2",
+        "stock": 200
+      },
+      {
+        "item": "Item 3",
+        "stock": 150
+      },
+      {
+        "item": "Item 4",
+        "stock": 300
+      },
+      {
+        "item": "Item 5",
+        "stock": 250
+      },
+      {
+        "item": "Item 6",
+        "stock": 120
+      },
+      {
+        "item": "Item 7",
+        "stock": 90
+      },
+      {
+        "item": "Item 8",
+        "stock": 400
+      },
+      {
+        "item": "Item 9",
+        "stock": 500
+      },
+      {
+        "item": "Item 10",
+        "stock": 350
+      },
+      {
+        "item": "Item 11",
+        "stock": 80
+      },
+      {
+        "item": "Item 12",
+        "stock": 220
+      },
+      {
+        "item": "Item 13",
+        "stock": 180
+      },
+      {
+        "item": "Item 14",
+        "stock": 270
+      },
+      {
+        "item": "Item 15",
+        "stock": 160
+      },
+      {
+        "item": "Item 16",
+        "stock": 340
+      },
+      {
+        "item": "Item 17",
+        "stock": 200
+      },
+      {
+        "item": "Item 18",
+        "stock": 600
+      },
+      {
+        "item": "Item 19",
+        "stock": 75
+      },
+      {
+        "item": "Item 20",
+        "stock": 150
+      },
+      {
+        "item": "Item 21",
+        "stock": 300
+      },
+      {
+        "item": "Item 22",
+        "stock": 90
+      },
+      {
+        "item": "Item 23",
+        "stock": 120
+      },
+      {
+        "item": "Item 24",
+        "stock": 400
+      },
+      {
+        "item": "Item 25",
+        "stock": 500
+      },
+      {
+        "item": "Item 26",
+        "stock": 200
+      },
+      {
+        "item": "Item 27",
+        "stock": 250
+      },
+      {
+        "item": "Item 28",
+        "stock": 150
+      },
+      {
+        "item": "Item 29",
+        "stock": 350
+      },
+      {
+        "item": "Item 30",
+        "stock": 300
+      },
+      {
+        "item": "Item 31",
+        "stock": 400
+      },
+      {
+        "item": "Item 32",
+        "stock": 500
+      },
+      {
+        "item": "Item 33",
+        "stock": 250
+      },
+      {
+        "item": "Item 34",
+        "stock": 150
+      },
+      {
+        "item": "Item 35",
+        "stock": 300
+      },
+      {
+        "item": "Item 36",
+        "stock": 120
+      },
+      {
+        "item": "Item 37",
+        "stock": 80
+      },
+      {
+        "item": "Item 38",
+        "stock": 220
+      },
+      {
+        "item": "Item 39",
+        "stock": 180
+      },
+      {
+        "item": "Item 40",
+        "stock": 270
+      },
+      {
+        "item": "Item 41",
+        "stock": 160
+      },
+      {
+        "item": "Item 42",
+        "stock": 340
+      },
+      {
+        "item": "Item 43",
+        "stock": 200
+      },
+      {
+        "item": "Item 44",
+        "stock": 600
+      },
+      {
+        "item": "Item 45",
+        "stock": 75
+      },
+      {
+        "item": "Item 46",
+        "stock": 150
+      },
+      {
+        "item": "Item 47",
+        "stock": 300
+      },
+      {
+        "item": "Item 48",
+        "stock": 90
+      },
+      {
+        "item": "Item 49",
+        "stock": 120
+      },
+      {
+        "item": "Item 50",
+        "stock": 400
+      },
+      {
+        "item": "Item 51",
+        "stock": 500
+      },
+      {
+        "item": "Item 52",
+        "stock": 200
+      },
+      {
+        "item": "Item 53",
+        "stock": 250
+      },
+      {
+        "item": "Item 54",
+        "stock": 150
+      },
+      {
+        "item": "Item 55",
+        "stock": 350
+      },
+      {
+        "item": "Item 56",
+        "stock": 300
+      },
+      {
+        "item": "Item 57",
+        "stock": 400
+      },
+      {
+        "item": "Item 58",
+        "stock": 500
+      },
+      {
+        "item": "Item 59",
+        "stock": 250
+      },
+      {
+        "item": "Item 60",
+        "stock": 150
+      },
+      {
+        "item": "Item 61",
+        "stock": 300
+      },
+      {
+        "item": "Item 62",
+        "stock": 120
+      },
+      {
+        "item": "Item 63",
+        "stock": 80
+      },
+      {
+        "item": "Item 64",
+        "stock": 220
+      },
+      {
+        "item": "Item 65",
+        "stock": 180
+      },
+      {
+        "item": "Item 66",
+        "stock": 270
+      },
+      {
+        "item": "Item 67",
+        "stock": 160
+      },
+      {
+        "item": "Item 68",
+        "stock": 340
+      },
+      {
+        "item": "Item 69",
+        "stock": 200
+      },
+      {
+        "item": "Item 70",
+        "stock": 600
+      },
+      {
+        "item": "Item 71",
+        "stock": 75
+      },
+      {
+        "item": "Item 72",
+        "stock": 150
+      },
+      {
+        "item": "Item 73",
+        "stock": 300
+      },
+      {
+        "item": "Item 74",
+        "stock": 90
+      },
+      {
+        "item": "Item 75",
+        "stock": 120
+      },
+      {
+        "item": "Item 76",
+        "stock": 400
+      },
+      {
+        "item": "Item 77",
+        "stock": 500
+      },
+      {
+        "item": "Item 78",
+        "stock": 200
+      },
+      {
+        "item": "Item 79",
+        "stock": 250
+      },
+      {
+        "item": "Item 80",
+        "stock": 150
+      },
+      {
+        "item": "Item 81",
+        "stock": 350
+      },
+      {
+        "item": "Item 82",
+        "stock": 300
+      },
+      {
+        "item": "Item 83",
+        "stock": 400
+      },
+      {
+        "item": "Item 84",
+        "stock": 500
+      },
+      {
+        "item": "Item 85",
+        "stock": 250
+      },
+      {
+        "item": "Item 86",
+        "stock": 150
+      },
+      {
+        "item": "Item 87",
+        "stock": 300
+      },
+      {
+        "item": "Item 88",
+        "stock": 120
+      },
+      {
+        "item": "Item 89",
+        "stock": 80
+      },
+      {
+        "item": "Item 90",
+        "stock": 220
+      },
+      {
+        "item": "Item 91",
+        "stock": 180
+      },
+      {
+        "item": "Item 92",
+        "stock": 270
+      },
+      {
+        "item": "Item 93",
+        "stock": 160
+      },
+      {
+        "item": "Item 94",
+        "stock": 340
+      },
+      {
+        "item": "Item 95",
+        "stock": 200
+      },
+      {
+        "item": "Item 96",
+        "stock": 600
+      },
+      {
+        "item": "Item 97",
+        "stock": 75
+      },
+      {
+        "item": "Item 98",
+        "stock": 150
+      },
+      {
+        "item": "Item 99",
+        "stock": 300
+      },
+      {
+        "item": "Item 100",
+        "stock": 90
+      }
+    ]
+  },
+  {
+    "date": "2024-10-22T18:43:10.019Z",
+    "stockLevels": [
+      {
+        "item": "Item 1",
+        "stock": 100
+      },
+      {
+        "item": "Item 2",
+        "stock": 200
+      },
+      {
+        "item": "Item 3",
+        "stock": 150
+      },
+      {
+        "item": "Item 4",
+        "stock": 300
+      },
+      {
+        "item": "Item 5",
+        "stock": 250
+      },
+      {
+        "item": "Item 6",
+        "stock": 120
+      },
+      {
+        "item": "Item 7",
+        "stock": 90
+      },
+      {
+        "item": "Item 8",
+        "stock": 400
+      },
+      {
+        "item": "Item 9",
+        "stock": 500
+      },
+      {
+        "item": "Item 10",
+        "stock": 350
+      },
+      {
+        "item": "Item 11",
+        "stock": 80
+      },
+      {
+        "item": "Item 12",
+        "stock": 220
+      },
+      {
+        "item": "Item 13",
+        "stock": 180
+      },
+      {
+        "item": "Item 14",
+        "stock": 270
+      },
+      {
+        "item": "Item 15",
+        "stock": 160
+      },
+      {
+        "item": "Item 16",
+        "stock": 340
+      },
+      {
+        "item": "Item 17",
+        "stock": 200
+      },
+      {
+        "item": "Item 18",
+        "stock": 600
+      },
+      {
+        "item": "Item 19",
+        "stock": 75
+      },
+      {
+        "item": "Item 20",
+        "stock": 150
+      },
+      {
+        "item": "Item 21",
+        "stock": 300
+      },
+      {
+        "item": "Item 22",
+        "stock": 90
+      },
+      {
+        "item": "Item 23",
+        "stock": 120
+      },
+      {
+        "item": "Item 24",
+        "stock": 400
+      },
+      {
+        "item": "Item 25",
+        "stock": 500
+      },
+      {
+        "item": "Item 26",
+        "stock": 200
+      },
+      {
+        "item": "Item 27",
+        "stock": 250
+      },
+      {
+        "item": "Item 28",
+        "stock": 150
+      },
+      {
+        "item": "Item 29",
+        "stock": 350
+      },
+      {
+        "item": "Item 30",
+        "stock": 300
+      },
+      {
+        "item": "Item 31",
+        "stock": 400
+      },
+      {
+        "item": "Item 32",
+        "stock": 500
+      },
+      {
+        "item": "Item 33",
+        "stock": 250
+      },
+      {
+        "item": "Item 34",
+        "stock": 150
+      },
+      {
+        "item": "Item 35",
+        "stock": 300
+      },
+      {
+        "item": "Item 36",
+        "stock": 120
+      },
+      {
+        "item": "Item 37",
+        "stock": 80
+      },
+      {
+        "item": "Item 38",
+        "stock": 220
+      },
+      {
+        "item": "Item 39",
+        "stock": 180
+      },
+      {
+        "item": "Item 40",
+        "stock": 270
+      },
+      {
+        "item": "Item 41",
+        "stock": 160
+      },
+      {
+        "item": "Item 42",
+        "stock": 340
+      },
+      {
+        "item": "Item 43",
+        "stock": 200
+      },
+      {
+        "item": "Item 44",
+        "stock": 600
+      },
+      {
+        "item": "Item 45",
+        "stock": 75
+      },
+      {
+        "item": "Item 46",
+        "stock": 150
+      },
+      {
+        "item": "Item 47",
+        "stock": 300
+      },
+      {
+        "item": "Item 48",
+        "stock": 90
+      },
+      {
+        "item": "Item 49",
+        "stock": 120
+      },
+      {
+        "item": "Item 50",
+        "stock": 400
+      },
+      {
+        "item": "Item 51",
+        "stock": 500
+      },
+      {
+        "item": "Item 52",
+        "stock": 200
+      },
+      {
+        "item": "Item 53",
+        "stock": 250
+      },
+      {
+        "item": "Item 54",
+        "stock": 150
+      },
+      {
+        "item": "Item 55",
+        "stock": 350
+      },
+      {
+        "item": "Item 56",
+        "stock": 300
+      },
+      {
+        "item": "Item 57",
+        "stock": 400
+      },
+      {
+        "item": "Item 58",
+        "stock": 500
+      },
+      {
+        "item": "Item 59",
+        "stock": 250
+      },
+      {
+        "item": "Item 60",
+        "stock": 150
+      },
+      {
+        "item": "Item 61",
+        "stock": 300
+      },
+      {
+        "item": "Item 62",
+        "stock": 120
+      },
+      {
+        "item": "Item 63",
+        "stock": 80
+      },
+      {
+        "item": "Item 64",
+        "stock": 220
+      },
+      {
+        "item": "Item 65",
+        "stock": 180
+      },
+      {
+        "item": "Item 66",
+        "stock": 270
+      },
+      {
+        "item": "Item 67",
+        "stock": 160
+      },
+      {
+        "item": "Item 68",
+        "stock": 340
+      },
+      {
+        "item": "Item 69",
+        "stock": 200
+      },
+      {
+        "item": "Item 70",
+        "stock": 600
+      },
+      {
+        "item": "Item 71",
+        "stock": 75
+      },
+      {
+        "item": "Item 72",
+        "stock": 150
+      },
+      {
+        "item": "Item 73",
+        "stock": 300
+      },
+      {
+        "item": "Item 74",
+        "stock": 90
+      },
+      {
+        "item": "Item 75",
+        "stock": 120
+      },
+      {
+        "item": "Item 76",
+        "stock": 400
+      },
+      {
+        "item": "Item 77",
+        "stock": 500
+      },
+      {
+        "item": "Item 78",
+        "stock": 200
+      },
+      {
+        "item": "Item 79",
+        "stock": 250
+      },
+      {
+        "item": "Item 80",
+        "stock": 150
+      },
+      {
+        "item": "Item 81",
+        "stock": 350
+      },
+      {
+        "item": "Item 82",
+        "stock": 300
+      },
+      {
+        "item": "Item 83",
+        "stock": 400
+      },
+      {
+        "item": "Item 84",
+        "stock": 500
+      },
+      {
+        "item": "Item 85",
+        "stock": 250
+      },
+      {
+        "item": "Item 86",
+        "stock": 150
+      },
+      {
+        "item": "Item 87",
+        "stock": 300
+      },
+      {
+        "item": "Item 88",
+        "stock": 120
+      },
+      {
+        "item": "Item 89",
+        "stock": 80
+      },
+      {
+        "item": "Item 90",
+        "stock": 220
+      },
+      {
+        "item": "Item 91",
+        "stock": 180
+      },
+      {
+        "item": "Item 92",
+        "stock": 270
+      },
+      {
+        "item": "Item 93",
+        "stock": 160
+      },
+      {
+        "item": "Item 94",
+        "stock": 340
+      },
+      {
+        "item": "Item 95",
+        "stock": 200
+      },
+      {
+        "item": "Item 96",
+        "stock": 600
+      },
+      {
+        "item": "Item 97",
+        "stock": 75
+      },
+      {
+        "item": "Item 98",
+        "stock": 150
+      },
+      {
+        "item": "Item 99",
+        "stock": 300
+      },
+      {
+        "item": "Item 100",
+        "stock": 90
+      }
+    ]
+  },
+  {
+    "date": "2024-10-22T18:43:10.021Z",
+    "stockLevels": [
+      {
+        "item": "Item 1",
+        "stock": 100
+      },
+      {
+        "item": "Item 2",
+        "stock": 200
+      },
+      {
+        "item": "Item 3",
+        "stock": 150
+      },
+      {
+        "item": "Item 4",
+        "stock": 300
+      },
+      {
+        "item": "Item 5",
+        "stock": 250
+      },
+      {
+        "item": "Item 6",
+        "stock": 120
+      },
+      {
+        "item": "Item 7",
+        "stock": 90
+      },
+      {
+        "item": "Item 8",
+        "stock": 400
+      },
+      {
+        "item": "Item 9",
+        "stock": 500
+      },
+      {
+        "item": "Item 10",
+        "stock": 350
+      },
+      {
+        "item": "Item 11",
+        "stock": 80
+      },
+      {
+        "item": "Item 12",
+        "stock": 220
+      },
+      {
+        "item": "Item 13",
+        "stock": 180
+      },
+      {
+        "item": "Item 14",
+        "stock": 270
+      },
+      {
+        "item": "Item 15",
+        "stock": 160
+      },
+      {
+        "item": "Item 16",
+        "stock": 340
+      },
+      {
+        "item": "Item 17",
+        "stock": 200
+      },
+      {
+        "item": "Item 18",
+        "stock": 600
+      },
+      {
+        "item": "Item 19",
+        "stock": 75
+      },
+      {
+        "item": "Item 20",
+        "stock": 150
+      },
+      {
+        "item": "Item 21",
+        "stock": 300
+      },
+      {
+        "item": "Item 22",
+        "stock": 90
+      },
+      {
+        "item": "Item 23",
+        "stock": 120
+      },
+      {
+        "item": "Item 24",
+        "stock": 400
+      },
+      {
+        "item": "Item 25",
+        "stock": 500
+      },
+      {
+        "item": "Item 26",
+        "stock": 200
+      },
+      {
+        "item": "Item 27",
+        "stock": 250
+      },
+      {
+        "item": "Item 28",
+        "stock": 150
+      },
+      {
+        "item": "Item 29",
+        "stock": 350
+      },
+      {
+        "item": "Item 30",
+        "stock": 300
+      },
+      {
+        "item": "Item 31",
+        "stock": 400
+      },
+      {
+        "item": "Item 32",
+        "stock": 500
+      },
+      {
+        "item": "Item 33",
+        "stock": 250
+      },
+      {
+        "item": "Item 34",
+        "stock": 150
+      },
+      {
+        "item": "Item 35",
+        "stock": 300
+      },
+      {
+        "item": "Item 36",
+        "stock": 120
+      },
+      {
+        "item": "Item 37",
+        "stock": 80
+      },
+      {
+        "item": "Item 38",
+        "stock": 220
+      },
+      {
+        "item": "Item 39",
+        "stock": 180
+      },
+      {
+        "item": "Item 40",
+        "stock": 270
+      },
+      {
+        "item": "Item 41",
+        "stock": 160
+      },
+      {
+        "item": "Item 42",
+        "stock": 340
+      },
+      {
+        "item": "Item 43",
+        "stock": 200
+      },
+      {
+        "item": "Item 44",
+        "stock": 600
+      },
+      {
+        "item": "Item 45",
+        "stock": 75
+      },
+      {
+        "item": "Item 46",
+        "stock": 150
+      },
+      {
+        "item": "Item 47",
+        "stock": 300
+      },
+      {
+        "item": "Item 48",
+        "stock": 90
+      },
+      {
+        "item": "Item 49",
+        "stock": 120
+      },
+      {
+        "item": "Item 50",
+        "stock": 400
+      },
+      {
+        "item": "Item 51",
+        "stock": 500
+      },
+      {
+        "item": "Item 52",
+        "stock": 200
+      },
+      {
+        "item": "Item 53",
+        "stock": 250
+      },
+      {
+        "item": "Item 54",
+        "stock": 150
+      },
+      {
+        "item": "Item 55",
+        "stock": 350
+      },
+      {
+        "item": "Item 56",
+        "stock": 300
+      },
+      {
+        "item": "Item 57",
+        "stock": 400
+      },
+      {
+        "item": "Item 58",
+        "stock": 500
+      },
+      {
+        "item": "Item 59",
+        "stock": 250
+      },
+      {
+        "item": "Item 60",
+        "stock": 150
+      },
+      {
+        "item": "Item 61",
+        "stock": 300
+      },
+      {
+        "item": "Item 62",
+        "stock": 120
+      },
+      {
+        "item": "Item 63",
+        "stock": 80
+      },
+      {
+        "item": "Item 64",
+        "stock": 220
+      },
+      {
+        "item": "Item 65",
+        "stock": 180
+      },
+      {
+        "item": "Item 66",
+        "stock": 270
+      },
+      {
+        "item": "Item 67",
+        "stock": 160
+      },
+      {
+        "item": "Item 68",
+        "stock": 340
+      },
+      {
+        "item": "Item 69",
+        "stock": 200
+      },
+      {
+        "item": "Item 70",
+        "stock": 600
+      },
+      {
+        "item": "Item 71",
+        "stock": 75
+      },
+      {
+        "item": "Item 72",
+        "stock": 150
+      },
+      {
+        "item": "Item 73",
+        "stock": 300
+      },
+      {
+        "item": "Item 74",
+        "stock": 90
+      },
+      {
+        "item": "Item 75",
+        "stock": 120
+      },
+      {
+        "item": "Item 76",
+        "stock": 400
+      },
+      {
+        "item": "Item 77",
+        "stock": 500
+      },
+      {
+        "item": "Item 78",
+        "stock": 200
+      },
+      {
+        "item": "Item 79",
+        "stock": 250
+      },
+      {
+        "item": "Item 80",
+        "stock": 150
+      },
+      {
+        "item": "Item 81",
+        "stock": 350
+      },
+      {
+        "item": "Item 82",
+        "stock": 300
+      },
+      {
+        "item": "Item 83",
+        "stock": 400
+      },
+      {
+        "item": "Item 84",
+        "stock": 500
+      },
+      {
+        "item": "Item 85",
+        "stock": 250
+      },
+      {
+        "item": "Item 86",
+        "stock": 150
+      },
+      {
+        "item": "Item 87",
+        "stock": 300
+      },
+      {
+        "item": "Item 88",
+        "stock": 120
+      },
+      {
+        "item": "Item 89",
+        "stock": 80
+      },
+      {
+        "item": "Item 90",
+        "stock": 220
+      },
+      {
+        "item": "Item 91",
+        "stock": 180
+      },
+      {
+        "item": "Item 92",
+        "stock": 270
+      },
+      {
+        "item": "Item 93",
+        "stock": 160
+      },
+      {
+        "item": "Item 94",
+        "stock": 340
+      },
+      {
+        "item": "Item 95",
+        "stock": 200
+      },
+      {
+        "item": "Item 96",
+        "stock": 600
+      },
+      {
+        "item": "Item 97",
+        "stock": 75
+      },
+      {
+        "item": "Item 98",
+        "stock": 150
+      },
+      {
+        "item": "Item 99",
+        "stock": 300
+      },
+      {
+        "item": "Item 100",
+        "stock": 90
+      }
+    ]
+  },
+  {
+    "date": "2024-10-23T06:57:56.047Z",
+    "stockLevels": [
+      {
+        "item": "Item 1",
+        "stock": 100
+      },
+      {
+        "item": "Item 2",
+        "stock": 200
+      },
+      {
+        "item": "Item 3",
+        "stock": 150
+      },
+      {
+        "item": "Item 4",
+        "stock": 300
+      },
+      {
+        "item": "Item 5",
+        "stock": 250
+      },
+      {
+        "item": "Item 6",
+        "stock": 120
+      },
+      {
+        "item": "Item 7",
+        "stock": 90
+      },
+      {
+        "item": "Item 8",
+        "stock": 400
+      },
+      {
+        "item": "Item 9",
+        "stock": 500
+      },
+      {
+        "item": "Item 10",
+        "stock": 350
+      },
+      {
+        "item": "Item 11",
+        "stock": 80
+      },
+      {
+        "item": "Item 12",
+        "stock": 220
+      },
+      {
+        "item": "Item 13",
+        "stock": 180
+      },
+      {
+        "item": "Item 14",
+        "stock": 270
+      },
+      {
+        "item": "Item 15",
+        "stock": 160
+      },
+      {
+        "item": "Item 16",
+        "stock": 340
+      },
+      {
+        "item": "Item 17",
+        "stock": 200
+      },
+      {
+        "item": "Item 18",
+        "stock": 600
+      },
+      {
+        "item": "Item 19",
+        "stock": 75
+      },
+      {
+        "item": "Item 20",
+        "stock": 150
+      },
+      {
+        "item": "Item 21",
+        "stock": 300
+      },
+      {
+        "item": "Item 22",
+        "stock": 90
+      },
+      {
+        "item": "Item 23",
+        "stock": 120
+      },
+      {
+        "item": "Item 24",
+        "stock": 400
+      },
+      {
+        "item": "Item 25",
+        "stock": 500
+      },
+      {
+        "item": "Item 26",
+        "stock": 200
+      },
+      {
+        "item": "Item 27",
+        "stock": 250
+      },
+      {
+        "item": "Item 28",
+        "stock": 150
+      },
+      {
+        "item": "Item 29",
+        "stock": 350
+      },
+      {
+        "item": "Item 30",
+        "stock": 300
+      },
+      {
+        "item": "Item 31",
+        "stock": 400
+      },
+      {
+        "item": "Item 32",
+        "stock": 500
+      },
+      {
+        "item": "Item 33",
+        "stock": 250
+      },
+      {
+        "item": "Item 34",
+        "stock": 150
+      },
+      {
+        "item": "Item 35",
+        "stock": 300
+      },
+      {
+        "item": "Item 36",
+        "stock": 120
+      },
+      {
+        "item": "Item 37",
+        "stock": 80
+      },
+      {
+        "item": "Item 38",
+        "stock": 220
+      },
+      {
+        "item": "Item 39",
+        "stock": 180
+      },
+      {
+        "item": "Item 40",
+        "stock": 270
+      },
+      {
+        "item": "Item 41",
+        "stock": 160
+      },
+      {
+        "item": "Item 42",
+        "stock": 340
+      },
+      {
+        "item": "Item 43",
+        "stock": 200
+      },
+      {
+        "item": "Item 44",
+        "stock": 600
+      },
+      {
+        "item": "Item 45",
+        "stock": 75
+      },
+      {
+        "item": "Item 46",
+        "stock": 150
+      },
+      {
+        "item": "Item 47",
+        "stock": 300
+      },
+      {
+        "item": "Item 48",
+        "stock": 90
+      },
+      {
+        "item": "Item 49",
+        "stock": 120
+      },
+      {
+        "item": "Item 50",
+        "stock": 400
+      },
+      {
+        "item": "Item 51",
+        "stock": 500
+      },
+      {
+        "item": "Item 52",
+        "stock": 200
+      },
+      {
+        "item": "Item 53",
+        "stock": 250
+      },
+      {
+        "item": "Item 54",
+        "stock": 150
+      },
+      {
+        "item": "Item 55",
+        "stock": 350
+      },
+      {
+        "item": "Item 56",
+        "stock": 300
+      },
+      {
+        "item": "Item 57",
+        "stock": 400
+      },
+      {
+        "item": "Item 58",
+        "stock": 500
+      },
+      {
+        "item": "Item 59",
+        "stock": 250
+      },
+      {
+        "item": "Item 60",
+        "stock": 150
+      },
+      {
+        "item": "Item 61",
+        "stock": 300
+      },
+      {
+        "item": "Item 62",
+        "stock": 120
+      },
+      {
+        "item": "Item 63",
+        "stock": 80
+      },
+      {
+        "item": "Item 64",
+        "stock": 220
+      },
+      {
+        "item": "Item 65",
+        "stock": 180
+      },
+      {
+        "item": "Item 66",
+        "stock": 270
+      },
+      {
+        "item": "Item 67",
+        "stock": 160
+      },
+      {
+        "item": "Item 68",
+        "stock": 340
+      },
+      {
+        "item": "Item 69",
+        "stock": 200
+      },
+      {
+        "item": "Item 70",
+        "stock": 600
+      },
+      {
+        "item": "Item 71",
+        "stock": 75
+      },
+      {
+        "item": "Item 72",
+        "stock": 150
+      },
+      {
+        "item": "Item 73",
+        "stock": 300
+      },
+      {
+        "item": "Item 74",
+        "stock": 90
+      },
+      {
+        "item": "Item 75",
+        "stock": 120
+      },
+      {
+        "item": "Item 76",
+        "stock": 400
+      },
+      {
+        "item": "Item 77",
+        "stock": 500
+      },
+      {
+        "item": "Item 78",
+        "stock": 200
+      },
+      {
+        "item": "Item 79",
+        "stock": 250
+      },
+      {
+        "item": "Item 80",
+        "stock": 150
+      },
+      {
+        "item": "Item 81",
+        "stock": 350
+      },
+      {
+        "item": "Item 82",
+        "stock": 300
+      },
+      {
+        "item": "Item 83",
+        "stock": 400
+      },
+      {
+        "item": "Item 84",
+        "stock": 500
+      },
+      {
+        "item": "Item 85",
+        "stock": 250
+      },
+      {
+        "item": "Item 86",
+        "stock": 150
+      },
+      {
+        "item": "Item 87",
+        "stock": 300
+      },
+      {
+        "item": "Item 88",
+        "stock": 120
+      },
+      {
+        "item": "Item 89",
+        "stock": 80
+      },
+      {
+        "item": "Item 90",
+        "stock": 220
+      },
+      {
+        "item": "Item 91",
+        "stock": 180
+      },
+      {
+        "item": "Item 92",
+        "stock": 270
+      },
+      {
+        "item": "Item 93",
+        "stock": 160
+      },
+      {
+        "item": "Item 94",
+        "stock": 340
+      },
+      {
+        "item": "Item 95",
+        "stock": 200
+      },
+      {
+        "item": "Item 96",
+        "stock": 600
+      },
+      {
+        "item": "Item 97",
+        "stock": 75
+      },
+      {
+        "item": "Item 98",
+        "stock": 150
+      },
+      {
+        "item": "Item 99",
+        "stock": 300
+      },
+      {
+        "item": "Item 100",
+        "stock": 90
+      }
+    ]
+  },
+  {
+    "date": "2024-10-23T06:57:56.050Z",
+    "stockLevels": [
+      {
+        "item": "Item 1",
+        "stock": 100
+      },
+      {
+        "item": "Item 2",
+        "stock": 200
+      },
+      {
+        "item": "Item 3",
+        "stock": 150
+      },
+      {
+        "item": "Item 4",
+        "stock": 300
+      },
+      {
+        "item": "Item 5",
+        "stock": 250
+      },
+      {
+        "item": "Item 6",
+        "stock": 120
+      },
+      {
+        "item": "Item 7",
+        "stock": 90
+      },
+      {
+        "item": "Item 8",
+        "stock": 400
+      },
+      {
+        "item": "Item 9",
+        "stock": 500
+      },
+      {
+        "item": "Item 10",
+        "stock": 350
+      },
+      {
+        "item": "Item 11",
+        "stock": 80
+      },
+      {
+        "item": "Item 12",
+        "stock": 220
+      },
+      {
+        "item": "Item 13",
+        "stock": 180
+      },
+      {
+        "item": "Item 14",
+        "stock": 270
+      },
+      {
+        "item": "Item 15",
+        "stock": 160
+      },
+      {
+        "item": "Item 16",
+        "stock": 340
+      },
+      {
+        "item": "Item 17",
+        "stock": 200
+      },
+      {
+        "item": "Item 18",
+        "stock": 600
+      },
+      {
+        "item": "Item 19",
+        "stock": 75
+      },
+      {
+        "item": "Item 20",
+        "stock": 150
+      },
+      {
+        "item": "Item 21",
+        "stock": 300
+      },
+      {
+        "item": "Item 22",
+        "stock": 90
+      },
+      {
+        "item": "Item 23",
+        "stock": 120
+      },
+      {
+        "item": "Item 24",
+        "stock": 400
+      },
+      {
+        "item": "Item 25",
+        "stock": 500
+      },
+      {
+        "item": "Item 26",
+        "stock": 200
+      },
+      {
+        "item": "Item 27",
+        "stock": 250
+      },
+      {
+        "item": "Item 28",
+        "stock": 150
+      },
+      {
+        "item": "Item 29",
+        "stock": 350
+      },
+      {
+        "item": "Item 30",
+        "stock": 300
+      },
+      {
+        "item": "Item 31",
+        "stock": 400
+      },
+      {
+        "item": "Item 32",
+        "stock": 500
+      },
+      {
+        "item": "Item 33",
+        "stock": 250
+      },
+      {
+        "item": "Item 34",
+        "stock": 150
+      },
+      {
+        "item": "Item 35",
+        "stock": 300
+      },
+      {
+        "item": "Item 36",
+        "stock": 120
+      },
+      {
+        "item": "Item 37",
+        "stock": 80
+      },
+      {
+        "item": "Item 38",
+        "stock": 220
+      },
+      {
+        "item": "Item 39",
+        "stock": 180
+      },
+      {
+        "item": "Item 40",
+        "stock": 270
+      },
+      {
+        "item": "Item 41",
+        "stock": 160
+      },
+      {
+        "item": "Item 42",
+        "stock": 340
+      },
+      {
+        "item": "Item 43",
+        "stock": 200
+      },
+      {
+        "item": "Item 44",
+        "stock": 600
+      },
+      {
+        "item": "Item 45",
+        "stock": 75
+      },
+      {
+        "item": "Item 46",
+        "stock": 150
+      },
+      {
+        "item": "Item 47",
+        "stock": 300
+      },
+      {
+        "item": "Item 48",
+        "stock": 90
+      },
+      {
+        "item": "Item 49",
+        "stock": 120
+      },
+      {
+        "item": "Item 50",
+        "stock": 400
+      },
+      {
+        "item": "Item 51",
+        "stock": 500
+      },
+      {
+        "item": "Item 52",
+        "stock": 200
+      },
+      {
+        "item": "Item 53",
+        "stock": 250
+      },
+      {
+        "item": "Item 54",
+        "stock": 150
+      },
+      {
+        "item": "Item 55",
+        "stock": 350
+      },
+      {
+        "item": "Item 56",
+        "stock": 300
+      },
+      {
+        "item": "Item 57",
+        "stock": 400
+      },
+      {
+        "item": "Item 58",
+        "stock": 500
+      },
+      {
+        "item": "Item 59",
+        "stock": 250
+      },
+      {
+        "item": "Item 60",
+        "stock": 150
+      },
+      {
+        "item": "Item 61",
+        "stock": 300
+      },
+      {
+        "item": "Item 62",
+        "stock": 120
+      },
+      {
+        "item": "Item 63",
+        "stock": 80
+      },
+      {
+        "item": "Item 64",
+        "stock": 220
+      },
+      {
+        "item": "Item 65",
+        "stock": 180
+      },
+      {
+        "item": "Item 66",
+        "stock": 270
+      },
+      {
+        "item": "Item 67",
+        "stock": 160
+      },
+      {
+        "item": "Item 68",
+        "stock": 340
+      },
+      {
+        "item": "Item 69",
+        "stock": 200
+      },
+      {
+        "item": "Item 70",
+        "stock": 600
+      },
+      {
+        "item": "Item 71",
+        "stock": 75
+      },
+      {
+        "item": "Item 72",
+        "stock": 150
+      },
+      {
+        "item": "Item 73",
+        "stock": 300
+      },
+      {
+        "item": "Item 74",
+        "stock": 90
+      },
+      {
+        "item": "Item 75",
+        "stock": 120
+      },
+      {
+        "item": "Item 76",
+        "stock": 400
+      },
+      {
+        "item": "Item 77",
+        "stock": 500
+      },
+      {
+        "item": "Item 78",
+        "stock": 200
+      },
+      {
+        "item": "Item 79",
+        "stock": 250
+      },
+      {
+        "item": "Item 80",
+        "stock": 150
+      },
+      {
+        "item": "Item 81",
+        "stock": 350
+      },
+      {
+        "item": "Item 82",
+        "stock": 300
+      },
+      {
+        "item": "Item 83",
+        "stock": 400
+      },
+      {
+        "item": "Item 84",
+        "stock": 500
+      },
+      {
+        "item": "Item 85",
+        "stock": 250
+      },
+      {
+        "item": "Item 86",
+        "stock": 150
+      },
+      {
+        "item": "Item 87",
+        "stock": 300
+      },
+      {
+        "item": "Item 88",
+        "stock": 120
+      },
+      {
+        "item": "Item 89",
+        "stock": 80
+      },
+      {
+        "item": "Item 90",
+        "stock": 220
+      },
+      {
+        "item": "Item 91",
+        "stock": 180
+      },
+      {
+        "item": "Item 92",
+        "stock": 270
+      },
+      {
+        "item": "Item 93",
+        "stock": 160
+      },
+      {
+        "item": "Item 94",
+        "stock": 340
+      },
+      {
+        "item": "Item 95",
+        "stock": 200
+      },
+      {
+        "item": "Item 96",
+        "stock": 600
+      },
+      {
+        "item": "Item 97",
+        "stock": 75
+      },
+      {
+        "item": "Item 98",
+        "stock": 150
+      },
+      {
+        "item": "Item 99",
+        "stock": 300
+      },
+      {
+        "item": "Item 100",
+        "stock": 90
+      }
+    ]
+  },
+  {
+    "date": "2024-10-23T06:59:14.758Z",
+    "stockLevels": [
+      {
+        "item": "Item 1",
+        "stock": 100
+      },
+      {
+        "item": "Item 2",
+        "stock": 200
+      },
+      {
+        "item": "Item 3",
+        "stock": 150
+      },
+      {
+        "item": "Item 4",
+        "stock": 300
+      },
+      {
+        "item": "Item 5",
+        "stock": 250
+      },
+      {
+        "item": "Item 6",
+        "stock": 120
+      },
+      {
+        "item": "Item 7",
+        "stock": 90
+      },
+      {
+        "item": "Item 8",
+        "stock": 400
+      },
+      {
+        "item": "Item 9",
+        "stock": 500
+      },
+      {
+        "item": "Item 10",
+        "stock": 350
+      },
+      {
+        "item": "Item 11",
+        "stock": 80
+      },
+      {
+        "item": "Item 12",
+        "stock": 220
+      },
+      {
+        "item": "Item 13",
+        "stock": 180
+      },
+      {
+        "item": "Item 14",
+        "stock": 270
+      },
+      {
+        "item": "Item 15",
+        "stock": 160
+      },
+      {
+        "item": "Item 16",
+        "stock": 340
+      },
+      {
+        "item": "Item 17",
+        "stock": 200
+      },
+      {
+        "item": "Item 18",
+        "stock": 600
+      },
+      {
+        "item": "Item 19",
+        "stock": 75
+      },
+      {
+        "item": "Item 20",
+        "stock": 150
+      },
+      {
+        "item": "Item 21",
+        "stock": 300
+      },
+      {
+        "item": "Item 22",
+        "stock": 90
+      },
+      {
+        "item": "Item 23",
+        "stock": 120
+      },
+      {
+        "item": "Item 24",
+        "stock": 400
+      },
+      {
+        "item": "Item 25",
+        "stock": 500
+      },
+      {
+        "item": "Item 26",
+        "stock": 200
+      },
+      {
+        "item": "Item 27",
+        "stock": 250
+      },
+      {
+        "item": "Item 28",
+        "stock": 150
+      },
+      {
+        "item": "Item 29",
+        "stock": 350
+      },
+      {
+        "item": "Item 30",
+        "stock": 300
+      },
+      {
+        "item": "Item 31",
+        "stock": 400
+      },
+      {
+        "item": "Item 32",
+        "stock": 500
+      },
+      {
+        "item": "Item 33",
+        "stock": 250
+      },
+      {
+        "item": "Item 34",
+        "stock": 150
+      },
+      {
+        "item": "Item 35",
+        "stock": 300
+      },
+      {
+        "item": "Item 36",
+        "stock": 120
+      },
+      {
+        "item": "Item 37",
+        "stock": 80
+      },
+      {
+        "item": "Item 38",
+        "stock": 220
+      },
+      {
+        "item": "Item 39",
+        "stock": 180
+      },
+      {
+        "item": "Item 40",
+        "stock": 270
+      },
+      {
+        "item": "Item 41",
+        "stock": 160
+      },
+      {
+        "item": "Item 42",
+        "stock": 340
+      },
+      {
+        "item": "Item 43",
+        "stock": 200
+      },
+      {
+        "item": "Item 44",
+        "stock": 600
+      },
+      {
+        "item": "Item 45",
+        "stock": 75
+      },
+      {
+        "item": "Item 46",
+        "stock": 150
+      },
+      {
+        "item": "Item 47",
+        "stock": 300
+      },
+      {
+        "item": "Item 48",
+        "stock": 90
+      },
+      {
+        "item": "Item 49",
+        "stock": 120
+      },
+      {
+        "item": "Item 50",
+        "stock": 400
+      },
+      {
+        "item": "Item 51",
+        "stock": 500
+      },
+      {
+        "item": "Item 52",
+        "stock": 200
+      },
+      {
+        "item": "Item 53",
+        "stock": 250
+      },
+      {
+        "item": "Item 54",
+        "stock": 150
+      },
+      {
+        "item": "Item 55",
+        "stock": 350
+      },
+      {
+        "item": "Item 56",
+        "stock": 300
+      },
+      {
+        "item": "Item 57",
+        "stock": 400
+      },
+      {
+        "item": "Item 58",
+        "stock": 500
+      },
+      {
+        "item": "Item 59",
+        "stock": 250
+      },
+      {
+        "item": "Item 60",
+        "stock": 150
+      },
+      {
+        "item": "Item 61",
+        "stock": 300
+      },
+      {
+        "item": "Item 62",
+        "stock": 120
+      },
+      {
+        "item": "Item 63",
+        "stock": 80
+      },
+      {
+        "item": "Item 64",
+        "stock": 220
+      },
+      {
+        "item": "Item 65",
+        "stock": 180
+      },
+      {
+        "item": "Item 66",
+        "stock": 270
+      },
+      {
+        "item": "Item 67",
+        "stock": 160
+      },
+      {
+        "item": "Item 68",
+        "stock": 340
+      },
+      {
+        "item": "Item 69",
+        "stock": 200
+      },
+      {
+        "item": "Item 70",
+        "stock": 600
+      },
+      {
+        "item": "Item 71",
+        "stock": 75
+      },
+      {
+        "item": "Item 72",
+        "stock": 150
+      },
+      {
+        "item": "Item 73",
+        "stock": 300
+      },
+      {
+        "item": "Item 74",
+        "stock": 90
+      },
+      {
+        "item": "Item 75",
+        "stock": 120
+      },
+      {
+        "item": "Item 76",
+        "stock": 400
+      },
+      {
+        "item": "Item 77",
+        "stock": 500
+      },
+      {
+        "item": "Item 78",
+        "stock": 200
+      },
+      {
+        "item": "Item 79",
+        "stock": 250
+      },
+      {
+        "item": "Item 80",
+        "stock": 150
+      },
+      {
+        "item": "Item 81",
+        "stock": 350
+      },
+      {
+        "item": "Item 82",
+        "stock": 300
+      },
+      {
+        "item": "Item 83",
+        "stock": 400
+      },
+      {
+        "item": "Item 84",
+        "stock": 500
+      },
+      {
+        "item": "Item 85",
+        "stock": 250
+      },
+      {
+        "item": "Item 86",
+        "stock": 150
+      },
+      {
+        "item": "Item 87",
+        "stock": 300
+      },
+      {
+        "item": "Item 88",
+        "stock": 120
+      },
+      {
+        "item": "Item 89",
+        "stock": 80
+      },
+      {
+        "item": "Item 90",
+        "stock": 220
+      },
+      {
+        "item": "Item 91",
+        "stock": 180
+      },
+      {
+        "item": "Item 92",
+        "stock": 270
+      },
+      {
+        "item": "Item 93",
+        "stock": 160
+      },
+      {
+        "item": "Item 94",
+        "stock": 340
+      },
+      {
+        "item": "Item 95",
+        "stock": 200
+      },
+      {
+        "item": "Item 96",
+        "stock": 600
+      },
+      {
+        "item": "Item 97",
+        "stock": 75
+      },
+      {
+        "item": "Item 98",
+        "stock": 150
+      },
+      {
+        "item": "Item 99",
+        "stock": 300
+      },
+      {
+        "item": "Item 100",
+        "stock": 90
+      }
+    ]
+  },
+  {
+    "date": "2024-10-23T06:59:14.762Z",
+    "stockLevels": [
+      {
+        "item": "Item 1",
+        "stock": 100
+      },
+      {
+        "item": "Item 2",
+        "stock": 200
+      },
+      {
+        "item": "Item 3",
+        "stock": 150
+      },
+      {
+        "item": "Item 4",
+        "stock": 300
+      },
+      {
+        "item": "Item 5",
+        "stock": 250
+      },
+      {
+        "item": "Item 6",
+        "stock": 120
+      },
+      {
+        "item": "Item 7",
+        "stock": 90
+      },
+      {
+        "item": "Item 8",
+        "stock": 400
+      },
+      {
+        "item": "Item 9",
+        "stock": 500
+      },
+      {
+        "item": "Item 10",
+        "stock": 350
+      },
+      {
+        "item": "Item 11",
+        "stock": 80
+      },
+      {
+        "item": "Item 12",
+        "stock": 220
+      },
+      {
+        "item": "Item 13",
+        "stock": 180
+      },
+      {
+        "item": "Item 14",
+        "stock": 270
+      },
+      {
+        "item": "Item 15",
+        "stock": 160
+      },
+      {
+        "item": "Item 16",
+        "stock": 340
+      },
+      {
+        "item": "Item 17",
+        "stock": 200
+      },
+      {
+        "item": "Item 18",
+        "stock": 600
+      },
+      {
+        "item": "Item 19",
+        "stock": 75
+      },
+      {
+        "item": "Item 20",
+        "stock": 150
+      },
+      {
+        "item": "Item 21",
+        "stock": 300
+      },
+      {
+        "item": "Item 22",
+        "stock": 90
+      },
+      {
+        "item": "Item 23",
+        "stock": 120
+      },
+      {
+        "item": "Item 24",
+        "stock": 400
+      },
+      {
+        "item": "Item 25",
+        "stock": 500
+      },
+      {
+        "item": "Item 26",
+        "stock": 200
+      },
+      {
+        "item": "Item 27",
+        "stock": 250
+      },
+      {
+        "item": "Item 28",
+        "stock": 150
+      },
+      {
+        "item": "Item 29",
+        "stock": 350
+      },
+      {
+        "item": "Item 30",
+        "stock": 300
+      },
+      {
+        "item": "Item 31",
+        "stock": 400
+      },
+      {
+        "item": "Item 32",
+        "stock": 500
+      },
+      {
+        "item": "Item 33",
+        "stock": 250
+      },
+      {
+        "item": "Item 34",
+        "stock": 150
+      },
+      {
+        "item": "Item 35",
+        "stock": 300
+      },
+      {
+        "item": "Item 36",
+        "stock": 120
+      },
+      {
+        "item": "Item 37",
+        "stock": 80
+      },
+      {
+        "item": "Item 38",
+        "stock": 220
+      },
+      {
+        "item": "Item 39",
+        "stock": 180
+      },
+      {
+        "item": "Item 40",
+        "stock": 270
+      },
+      {
+        "item": "Item 41",
+        "stock": 160
+      },
+      {
+        "item": "Item 42",
+        "stock": 340
+      },
+      {
+        "item": "Item 43",
+        "stock": 200
+      },
+      {
+        "item": "Item 44",
+        "stock": 600
+      },
+      {
+        "item": "Item 45",
+        "stock": 75
+      },
+      {
+        "item": "Item 46",
+        "stock": 150
+      },
+      {
+        "item": "Item 47",
+        "stock": 300
+      },
+      {
+        "item": "Item 48",
+        "stock": 90
+      },
+      {
+        "item": "Item 49",
+        "stock": 120
+      },
+      {
+        "item": "Item 50",
+        "stock": 400
+      },
+      {
+        "item": "Item 51",
+        "stock": 500
+      },
+      {
+        "item": "Item 52",
+        "stock": 200
+      },
+      {
+        "item": "Item 53",
+        "stock": 250
+      },
+      {
+        "item": "Item 54",
+        "stock": 150
+      },
+      {
+        "item": "Item 55",
+        "stock": 350
+      },
+      {
+        "item": "Item 56",
+        "stock": 300
+      },
+      {
+        "item": "Item 57",
+        "stock": 400
+      },
+      {
+        "item": "Item 58",
+        "stock": 500
+      },
+      {
+        "item": "Item 59",
+        "stock": 250
+      },
+      {
+        "item": "Item 60",
+        "stock": 150
+      },
+      {
+        "item": "Item 61",
+        "stock": 300
+      },
+      {
+        "item": "Item 62",
+        "stock": 120
+      },
+      {
+        "item": "Item 63",
+        "stock": 80
+      },
+      {
+        "item": "Item 64",
+        "stock": 220
+      },
+      {
+        "item": "Item 65",
+        "stock": 180
+      },
+      {
+        "item": "Item 66",
+        "stock": 270
+      },
+      {
+        "item": "Item 67",
+        "stock": 160
+      },
+      {
+        "item": "Item 68",
+        "stock": 340
+      },
+      {
+        "item": "Item 69",
+        "stock": 200
+      },
+      {
+        "item": "Item 70",
+        "stock": 600
+      },
+      {
+        "item": "Item 71",
+        "stock": 75
+      },
+      {
+        "item": "Item 72",
+        "stock": 150
+      },
+      {
+        "item": "Item 73",
+        "stock": 300
+      },
+      {
+        "item": "Item 74",
+        "stock": 90
+      },
+      {
+        "item": "Item 75",
+        "stock": 120
+      },
+      {
+        "item": "Item 76",
+        "stock": 400
+      },
+      {
+        "item": "Item 77",
+        "stock": 500
+      },
+      {
+        "item": "Item 78",
+        "stock": 200
+      },
+      {
+        "item": "Item 79",
+        "stock": 250
+      },
+      {
+        "item": "Item 80",
+        "stock": 150
+      },
+      {
+        "item": "Item 81",
+        "stock": 350
+      },
+      {
+        "item": "Item 82",
+        "stock": 300
+      },
+      {
+        "item": "Item 83",
+        "stock": 400
+      },
+      {
+        "item": "Item 84",
+        "stock": 500
+      },
+      {
+        "item": "Item 85",
+        "stock": 250
+      },
+      {
+        "item": "Item 86",
+        "stock": 150
+      },
+      {
+        "item": "Item 87",
+        "stock": 300
+      },
+      {
+        "item": "Item 88",
+        "stock": 120
+      },
+      {
+        "item": "Item 89",
+        "stock": 80
+      },
+      {
+        "item": "Item 90",
+        "stock": 220
+      },
+      {
+        "item": "Item 91",
+        "stock": 180
+      },
+      {
+        "item": "Item 92",
+        "stock": 270
+      },
+      {
+        "item": "Item 93",
+        "stock": 160
+      },
+      {
+        "item": "Item 94",
+        "stock": 340
+      },
+      {
+        "item": "Item 95",
+        "stock": 200
+      },
+      {
+        "item": "Item 96",
+        "stock": 600
+      },
+      {
+        "item": "Item 97",
+        "stock": 75
+      },
+      {
+        "item": "Item 98",
+        "stock": 150
+      },
+      {
+        "item": "Item 99",
+        "stock": 300
+      },
+      {
+        "item": "Item 100",
+        "stock": 90
+      }
+    ]
+  }
+]

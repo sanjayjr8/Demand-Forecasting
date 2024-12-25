@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Analytics</title>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Inventory Data</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="fileInput" accept=".csv" required>
+            <button type="submit">Upload</button>
+        </form>
+        <canvas id="stockChart" width="400" height="200"></canvas>
+        <div id="results"></div>
+        <button id="downloadBtn">Download Analytics</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>
