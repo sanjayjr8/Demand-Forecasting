@@ -1,0 +1,252 @@
+/* global background div for whitespace  */
+.global {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--background-color);
+  z-index: -1000;
+}
+
+.stocks_dashboard_menu {
+  height: 5rem;
+  /* background-color: blue; */
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.stocks_dashboard_menu_inner_1 {
+  width: 32.5rem;
+  /* background-color: red; */
+}
+
+.stocks_dashboard_menu_inner_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+  width: 32.5rem;
+  gap: 0.3rem;
+  margin-bottom: 0.4rem;
+  /* background-color: blue; */
+}
+
+/* General Button Styling */
+.stocks_dashboard_menu_inner_button {
+  font-size: 1.1rem; /* Standard font size */
+  line-height: 1.2;
+  font-weight: 500;
+  background-color: var(--button);
+  color: var(--button-text);
+  padding: 0.6rem 0.7rem; /* Standard padding */
+  border: 0.15rem solid var(--background-color);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  min-width: 7.5rem; /* Minimum width for other buttons */
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* DEMAND FORECAST Button Styling */
+.small-text-button {
+  font-size: 0.85rem; /* Slightly smaller font size to fit */
+  padding: 0.6rem 0.7rem; /* Same padding as other buttons */
+  min-width: 7.5rem; /* Match the min-width of other buttons */
+  max-width: 10rem; /* Max-width to prevent overflow */
+  overflow: hidden; /* Prevents overflow of text */
+  text-align: center; /* Centers the text */
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+
+/* dashboard layout  */
+.app_stocks_dashboard {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  background-color: var(--background-color);
+  /* padding-top: 5rem; */
+  /* background-color: red; */
+}
+
+/* dashboard layout inner  */
+.stocks_dashboard {
+  width: 32.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: inherit;
+  /* background-color: red; */
+}
+
+/* dashboard heading  */
+.stocks_dashboard_heading {
+  width: 32.5rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 7rem;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+  color: var(--headline);
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+}
+
+.stocks_dashboard_button {
+  color: var(--button-text);
+  background-color: var(--button);
+  border: 0.15rem solid var(--background-color);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  padding: 1.2rem 1.3rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+/* dashboard blocks grouped */
+.stocks_dashboard_blocks {
+  z-index: inherit;
+}
+
+/* single dashboard block  */
+.stocks_dashboard_block {
+  background-color: var(--headline);
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+  width: 32.5rem;
+  cursor: pointer;
+}
+
+.stocks_dashboard_block_name {
+  font-size: 2rem;
+  line-height: 1.875rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.block_name_tag {
+  color: var(--card-highlights);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.stocks_dashboard_block_address {
+  color: var(--paragraph);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-bottom: 0.6rem;
+}
+
+.stock_span {
+  color: var(--background-color);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.stocks_dashboard_block_contactEmail {
+  color: var(--paragraph);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+
+.stocks_dashboard_block_contactNumber {
+  color: var(--paragraph);
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+/* media query */
+@media (max-width: 1056px) {
+  .stocks_dashboard_heading {
+    width: 32.5rem;
+    position: static;
+    position: -webkit-sticky;
+    top: 0;
+  }
+  .stocks_dashboard_button {
+    margin-bottom: 1rem;
+  }
+
+  .app_stocks_dashboard {
+    padding-top: 0rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .stocks_dashboard_heading {
+    /* font-size: 1.8rem; */
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+    margin-left: 1.2rem;
+  }
+
+  .stocks_dashboard_block {
+    width: 100%;
+    padding: 2.5rem;
+    width: 90vw;
+    margin-bottom: 1rem;
+  }
+
+  .stocks_dashboard_button {
+    padding: 1rem 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .stocks_dashboard_heading {
+    font-size: 1.8rem;
+    text-align: start;
+  }
+
+  .stocks_dashboard_block {
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 1rem;
+    width: 90vw;
+  }
+
+  .stocks_dashboard_menu_inner_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 32.5rem;
+    gap: 0.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .stocks_dashboard_menu_inner_button {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    font-weight: 500;
+    width: 6.5rem;
+  }
+}
