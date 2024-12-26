@@ -66,31 +66,6 @@ Stay updated with stock alerts and notifications via Twilio integration.
 - Python (for ML models)
 - MongoDB
 
-### Steps to Run Locally
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sanjayjr8/Demand-Forecasting.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Demand-Forecasting
-   ```
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
-4. Start the backend server:
-   ```bash
-   node server.js
-   ```
-5. Run the Streamlit app for ML models:
-   ```bash
-   streamlit run app.py
-   ```
-6. Open your browser and access the application at:
-   ```
-   http://localhost:3000
-   ```
 
 ---
 
