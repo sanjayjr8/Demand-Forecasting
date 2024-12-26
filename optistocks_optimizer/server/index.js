@@ -11,6 +11,7 @@ async function connectToMongo() {
     console.log(`Connected To DB lol`);
   }) 
 }
+app.set('trust proxy', true);
 
 // Security middlewares
 app.use(helmet());
