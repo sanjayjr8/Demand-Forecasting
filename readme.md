@@ -95,3 +95,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### 💡 What We Bring to the Table?
 
 **OptiStocks** combines cutting-edge technology with user-friendly features to streamline your inventory management processes. Start optimizing your supply chain today with **OptiStocks**! 🌟
+
+[![Launch](https://img.shields.io/badge/Launch-100000?logo=rocket&logoColor=white)](https://demand-forecasting-pink.vercel.app) Visit **OptiStocks**, your all-in-one solution for inventory management, demand forecasting, and analytics. With a sleek interface, robust backend, and powerful machine learning models, OptiStocks makes managing your inventory a breeze.
