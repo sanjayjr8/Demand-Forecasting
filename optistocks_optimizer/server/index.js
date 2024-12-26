@@ -18,11 +18,8 @@ app.use((req, res, next) => {
 });
 
 // CORS
-app.use(cors({
-  origin: 'https://demand-forecasting-pink.vercel.app', 
-  methods: 'GET,POST,PUT,DELETE', 
-  allowedHeaders: 'Content-Type, Authorization', 
-}));
+app.use(cors());
+
 
 
 // Routes
