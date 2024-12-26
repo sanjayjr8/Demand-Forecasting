@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "index.js": {
+      "runtime": "nodejs"
+    }
+  },
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ]
+}
