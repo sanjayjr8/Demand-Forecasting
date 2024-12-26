@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const wrapAsync = require("../middlewares/wrapAsync.js");
-const { isLoggedIn,isOwner } = require("../middlewares/authMiddleware.js");
+const { isAuthenticated } = require("../middlewares/authMiddleware.js");
 const {
   sendWhatsAppMessage
 } = require("../controllers/chatController.js");
 
-router.get("/:companyId", isLoggedIn, wrapAsync(sendWhatsAppMessage));
-router.post("/:companyId", isLoggedIn, wrapAsync(sendWhatsAppMessage));
+router.get("/:companyId", isAuthenticated, wrapAsync(sendWhatsAppMessage));
+router.post("/:companyId", isAuthenticated, wrapAsync(sendWhatsAppMessage));
 
 module.exports = router;

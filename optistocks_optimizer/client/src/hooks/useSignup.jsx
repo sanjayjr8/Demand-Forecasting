@@ -13,7 +13,7 @@ export const useSignup = () => {
     setIsLoading(true) 
     setError(null);
 
-    const response = await fetch("https://stockwise-server-8006.onrender.com/api/auth/signup", {
+    const response = await fetch("https://optistocks-optimizer.onrender.com/api/auth/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, email, password }),

@@ -17,7 +17,7 @@ const StockForm = ({ onClose }) => {
     e.preventDefault();
     const stock = { name, totalUnits, unitsSold, pricePerUnit };
     const response = await fetch(
-      `https://stockwise-server-8006.onrender.com/api/dashboard/companies/${companyId}/stocks`,
+      `https://optistocks-optimizer.onrender.com/api/dashboard/companies/${companyId}/stocks`,
       {
         method: "POST",
         body: JSON.stringify(stock),

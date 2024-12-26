@@ -15,7 +15,7 @@ export default function DataDashboard() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `https://stockwise-server-8006.onrender.com/api/dashboard/companies/data/${companyId}`,
+          `https://optistocks-optimizer.onrender.com/api/dashboard/companies/data/${companyId}`,
           {
             headers: {
               Authorization: `Bearer ${user.token}`,

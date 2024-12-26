@@ -1,28 +1,14 @@
+//express config
 const express = require('express');
-const mongoose = require('mongoose');
-const helmet = require('helmet');
-const rateLimit = require('express-rate-limit');
+const mongoose = require("mongoose");
+const cors = require('cors');
 require('dotenv').config();
 
+//express parse
 const app = express();
 app.use(express.json());
-async function connectToMongo() {
-  mongoose.connect(process.env.MONGO_URI).then(() => {
-    console.log(`Connected To DB lol`);
-  }) 
-}
-app.set('trust proxy', 'loopback');
 
-// Security middlewares
-app.use(helmet());
-app.use(rateLimit({
-  windowMs: 15 * 60 * 1000, // 15 minutes
-  max: 100 // Limit each IP to 100 requests per `window` (here, per 15 minutes)
-}));
-
-connectToMongo();
-
-// Global error handler
+//global error handler
 const errorHandler = require('./middlewares/ExpressError.js');
 
 // Log all requests
@@ -30,6 +16,14 @@ app.use((req, res, next) => {
   console.log(req.path, req.method);
   next();
 });
+
+// CORS
+app.use(cors({
+  origin: 'https://stockwise-omega.vercel.app', 
+  methods: 'GET,POST,PUT,DELETE', 
+  allowedHeaders: 'Content-Type, Authorization', 
+}));
+
 
 // Routes
 const companyRoutes = require("./routes/companyRoutes.js");
@@ -55,9 +49,9 @@ app.use("/api/dashboard/companies/:companyId/stocks", stockRoutes);
 // Error handling middleware
 app.use(errorHandler);
 
-app.listen(process.env.PORT,async ()=>{
-  console.log(
-    `Healthy backend server running ${process.env.PORT}`
-  )
-})
- 
+// Connect to MongoDB and start the server
+mongoose.connect(process.env.MONGO_URI).then(() => {
+  app.listen(process.env.PORT, () => {
+    console.log(`Connected to DB and running on port http://localhost:${process.env.PORT}/`);
+  });
+});

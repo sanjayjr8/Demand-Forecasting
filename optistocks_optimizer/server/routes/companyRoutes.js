@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const wrapAsync = require("../middlewares/wrapAsync.js");
-const { isLoggedIn, isOwner } = require("../middlewares/authMiddleware.js");
+const { isAuthenticated } = require("../middlewares/authMiddleware.js");
 const {
   getCompanies,
   getCompany,
@@ -11,18 +11,18 @@ const {
 } = require("../controllers/companyController.js");
 
 // get all companies
-router.get("/", isLoggedIn, wrapAsync(getCompanies));
+router.get("/", isAuthenticated, wrapAsync(getCompanies));
 
 // create a company
-router.post("/", isLoggedIn, wrapAsync(createCompany));
+router.post("/", isAuthenticated, wrapAsync(createCompany));
 
 // get company by id
-router.get("/:companyId", isLoggedIn, wrapAsync(getCompany));
+router.get("/:companyId", isAuthenticated, wrapAsync(getCompany));
 
 // update company
-router.put("/:companyId", isLoggedIn, wrapAsync(updateCompany));
+router.put("/:companyId", isAuthenticated, wrapAsync(updateCompany));
 
 // delete company
-router.delete("/:companyId", isLoggedIn, wrapAsync(deleteCompany));
+router.delete("/:companyId", isAuthenticated, wrapAsync(deleteCompany));
 
 module.exports = router;
