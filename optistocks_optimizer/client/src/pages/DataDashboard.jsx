@@ -15,7 +15,7 @@ export default function DataDashboard() {
     const fetchData = async () => {
       try {
         const response = await fetch(
-          `/api/dashboard/companies/data/${companyId}`,
+          `https://stockwise-server-8006.onrender.com/api/dashboard/companies/data/${companyId}`,
           {
             headers: {
               Authorization: `Bearer ${user.token}`,
@@ -40,10 +40,6 @@ export default function DataDashboard() {
       fetchData();
     }
   }, [user, companyId]);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
 
   if (error) {
     return <div>Error: {error}</div>;
