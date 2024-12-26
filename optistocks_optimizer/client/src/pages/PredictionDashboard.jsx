@@ -9,13 +9,12 @@ export default function PredictionDashboard() {
   const { companyId } = useParams();
   const [predictions, setPredictions] = useState(null);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
-
+  
   useEffect(() => {
     const fetchPredictions = async () => {
       try {
         const response = await fetch(
-          `/api/dashboard/companies/prediction/${companyId}`,
+          `https://stockwise-server-8006.onrender.com/api/dashboard/companies/prediction/${companyId}`,
           {
             headers: {
               Authorization: `Bearer ${user.token}`,
@@ -31,19 +30,13 @@ export default function PredictionDashboard() {
         setPredictions(json);
       } catch (error) {
         setError(error.message);
-      } finally {
-        setLoading(false);
-      }
+      } 
     };
 
     if (user && companyId) {
       fetchPredictions();
     }
   }, [user, companyId]);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
 
   if (error) {
     return <div>Error: {error}</div>;
