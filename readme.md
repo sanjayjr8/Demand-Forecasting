@@ -11,6 +11,8 @@ OptiStocks is a **full-stack inventory management and demand forecasting platfor
 
 The system combines an intuitive web dashboard with a powerful time-series forecasting engine, helping companies **reduce stockouts, avoid overstocking, and make data-driven purchasing decisions**.
 
+**DEPLOYED SYSTEM**: https://demand-forecasting-pink.vercel.app/
+
 ---
 
 ## ✨ Key Features
@@ -126,7 +128,6 @@ streamlit run test.py
 
 ## 📸 Screenshots / Demo
 
-Screenshots and screen-recording are available in the repository and deployment links above.
 <img width="1888" height="1010" alt="image" src="https://github.com/user-attachments/assets/5d456218-3319-49e0-b155-db83f156f403" />
 <img width="1919" height="949" alt="image" src="https://github.com/user-attachments/assets/6452f553-0997-4e0c-ac95-dd430d8d4e9b" />
 <img width="1864" height="930" alt="image" src="https://github.com/user-attachments/assets/f4ed3ed5-9be2-4a33-9028-42e2868915cf" />
