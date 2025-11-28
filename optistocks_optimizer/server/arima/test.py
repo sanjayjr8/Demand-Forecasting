@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 import statsmodels.api as sm
 from pandas.tseries.offsets import DateOffset
 import plotly.express as px
+from pathlib import Path
+
 
 
 
@@ -486,7 +488,9 @@ h2 {
 
 # ---------------- Header ----------------
 st.markdown('<div class="header-container"><div class="header-inner">', unsafe_allow_html=True)
-st.image("About.jpg", use_container_width=True)
+BASE_DIR = Path(__file__).parent
+logo_path = BASE_DIR / "About.jpg"
+st.image(str(logo_path), width="stretch")
 st.markdown(
     '<div class="tagline">ADVANCED TIME SERIES FORECASTING WITH ARIMA &amp; SARIMA</div>',
     unsafe_allow_html=True
