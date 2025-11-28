@@ -234,7 +234,7 @@ export default function Homepage() {
         </div>
 
         <div className="footer_bottom">
-          <p>© 2024 OptiStocks. All rights reserved.</p>
+          <p>© 2025 OptiStocks. All rights reserved.</p>
         </div>
       </footer>
 
