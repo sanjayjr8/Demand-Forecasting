@@ -622,7 +622,7 @@ st.markdown("</div>", unsafe_allow_html=True)
 st.markdown(
     """
     <div class="footer">
-        <div>Powered by OptiStocks &nbsp;|&nbsp; © 2024</div>
+        <div>Powered by OptiStocks &nbsp;|&nbsp; © 2025</div>
         <div class="footer-icons">
             <a href="https://github.com/sanjayjr8" target="_blank">
                 <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" />
