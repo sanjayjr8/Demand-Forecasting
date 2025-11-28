@@ -50,7 +50,7 @@ The system combines an intuitive web dashboard with a powerful time-series forec
 
 | Component | Platform | Link |
 |---------|----------|------|
-| Frontend | Vercel | https://optistocks.vercel.app *(example)* |
+| Frontend | Vercel | https://demand-forecasting-pink.vercel.app|
 | Backend API | Render | https://optistocks-optimizer.onrender.com |
 | ARIMA Forecasting (ML) | Streamlit Cloud | https://demandforecast1.streamlit.app |
 
