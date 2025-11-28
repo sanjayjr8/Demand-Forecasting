@@ -1,5 +1,5 @@
 /* global background div for whitespace  */
-.global{
+.global {
   position: fixed;
   height: 100vh;
   width: 100vw;
@@ -7,196 +7,193 @@
   z-index: -1000;
 }
 
-/* dashboard layout  */
+/* overall layout */
 .app_company_dashboard {
   display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-wrap: wrap;
-  /* height: calc(100vh - 7rem); */
-  /* height: 100rem; */
-  background-color: var(--background-color);
-  padding-top: 5rem;
-  /* background-color: red; */
-}
-
-/* dashboard layout inner  */
-.company_dashboard {
-  width: 32.5rem;
-  /* height: 82vh; */
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  /* background-color: red; */
-  height: inherit;
-}
-
-/* dashboard heading  */
-.company_dashboard_heading {
-  width: 32.5rem;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 7rem;
-  /* float: left; */
-  font-size: 2rem;
-  line-height: 3.5rem;
-  font-weight: 700;
-  
-  color: black;
-  background-color: var(--background-color);
-  /* background-color: blue; */
-  display: flex;
-  justify-content: center;
-  align-items: start;
   flex-direction: column;
-  flex-wrap: wrap;
-  /* background-color: blue; */
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: var(--background-color);
+  padding: 3rem 4rem 2.5rem;
 }
 
+/* header */
+.company_dashboard_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  color: var(--headline);
+}
+
+.company_dashboard_heading_text {
+  max-width: 520px;
+}
+
+.companies-title {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+.companies-subtitle {
+  font-size: 0.95rem;
+  color: var(--paragraph);
+  opacity: 0.9;
+}
+
+/* add company button */
 .company_dashboard_button {
-  color: var(--button-text);
-  background-color: var(--button);
-  border: 0.15rem solid var(--background-color);
-  border-radius: 0.5rem;
+  color: #020308;
+  background: linear-gradient(135deg, #00e676, #00c853);
+  border: none;
+  border-radius: 999px;
   text-decoration: none;
   cursor: pointer;
   outline: none;
-  padding: 1.2rem 1.3rem;
-  font-size: 1.1rem;
+  padding: 0.8rem 1.6rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  margin-top: 1rem;
+  box-shadow: 0 14px 30px rgba(0, 255, 170, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.main_left_button {
-  margin-top: 1rem;
+.company_dashboard_button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 38px rgba(0, 255, 170, 0.35);
 }
 
-/* dashboard blocks grouped */
+/* container for cards */
+.company_dashboard {
+  width: 100%;
+}
+
+/* grid of cards */
 .company_dashboard_blocks {
-  z-index: inherit;
-  /* height: 100%; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
 }
 
 /* single dashboard block  */
 .company_dashboard_block {
-  background-color: var(--headline);
-  /* width: 30rem; */
-  padding: 2.5rem;
-  margin-bottom: 2rem;
-  border-radius: 3px;
-  width: 32.5rem;
+  background: radial-gradient(
+    circle at top left,
+    #c7eedc 0%,
+    #b7e4d1 40%,
+    #a9dcc6 100%
+  );
+  padding: 1.7rem 1.6rem;
+  border-radius: 18px;
   cursor: pointer;
-  
+  color: #020308;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  position: relative;
 }
 
+.company_dashboard_block:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.55);
+}
+
+/* name row */
 .company_dashboard_block_name {
-  /* background-color: gold; */
-  font-size: 2rem;
-  line-height: 1.875rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
   font-weight: 700;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  /* background-color: red; */
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.block_name_name {
+  color: #020308;
 }
 
 .block_name_tag {
-  color: var(--card-highlights);
-  font-size: 1.125rem;
-  font-weight: 500;
-  /* background-color: gainsboro; */
+  color: #ff4b81;
+  font-size: 0.9rem;
+  font-weight: 600;
 }
 
+/* address */
 .company_dashboard_block_address {
-  color: var(--paragraph);
-  font-size: 1.1rem;
+  color: #355b4c;
+  font-size: 0.9rem;
   font-weight: 400;
-  line-height: 1.7;
-  /* background-color: bisque; */
+  line-height: 1.6;
   margin-bottom: 0.6rem;
-  /* text-decoration: underline; */
 }
 
+/* contact labels */
 .contact_span {
-  color: var(--background-color);
-  font-size: 1.125rem;
+  color: #284437;
+  font-size: 0.85rem;
   font-weight: 700;
 }
 
-.company_dashboard_block_contactEmail {
-  color: var(--paragraph);
-  font-size: 1.1rem;
+/* contact rows */
+.company_dashboard_block_contactEmail,
+.company_dashboard_block_contactNumber {
+  color: #163127;
+  font-size: 0.85rem;
   font-weight: 400;
-  line-height: 1.7;
-  /* background-color: peru; */
-  margin-top: 0.5rem;
+  line-height: 1.5;
 }
 
-.company_dashboard_block_contactNumber {
-  color: var(--paragraph);
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.7;
-  /* background-color: goldenrod; */
+/* footer pill */
+.company_dashboard_block_footer {
+  margin-top: 0.8rem;
+}
+
+.company_pill {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.18rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(2, 3, 8, 0.14);
+  color: #123426;
 }
 
 /* media query */
 @media (max-width: 1056px) {
-  .company_dashboard_heading {
-    width: 32.5rem;
-    position: static;
-    position: -webkit-sticky;
-    top: 0;
-    /* z-index: 1; */
-  }
-  .company_dashboard_button {
-    margin-bottom: 1rem;
+  .app_company_dashboard {
+    padding: 2rem 1.5rem 2.3rem;
   }
 
-  .app_company_dashboard {
-    padding-top: 2rem;
+  .company_dashboard_heading {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
   }
 }
 
 @media (max-width: 575px) {
-  .company_dashboard_heading {
+  .companies-title {
     font-size: 1.8rem;
-    text-align: start;
-    justify-content: start;
-    align-items: start;
-    margin-left: 1rem;
-  }
-
-  .company_dashboard_block {
-    width: 100%;
-    padding: 2.5rem;
-    width: 90vw;
-    margin-bottom: 1rem;
   }
 
   .company_dashboard_button {
-    padding: 1rem 1.2rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-top: 1rem;
-    /* margin-left: 0.5rem; */
+    padding: 0.7rem 1.3rem;
+    font-size: 0.9rem;
+  }
+
+  .company_dashboard_block {
+    padding: 1.5rem 1.4rem;
   }
 }
 
 @media (max-width: 400px) {
-  .company_dashboard_heading {
-    font-size: 1.8rem;
-    text-align: start;
+  .app_company_dashboard {
+    padding: 1.8rem 1.2rem 2rem;
   }
 
   .company_dashboard_block {
-    width: 100%;
-    padding: 2rem;
-    margin-bottom: 1rem;
-    width: 90vw;
+    padding: 1.4rem 1.2rem;
   }
 }

@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../../styles/components/Forms/AuthForm.css"; 
-import { useLogin } from '../../hooks/useLogin'
+import "../../styles/components/Forms/AuthForm.css";
+import { useLogin } from "../../hooks/useLogin";
 import Loader from "../loaders/Loader";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { login, error, isLoading } = useLogin(); 
+  const { login, error, isLoading } = useLogin();
 
-  //check if form is filled
-  const isFormFilled = () => email && password
+  // check if form is filled
+  const isFormFilled = () => email && password;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -27,21 +27,32 @@ const Login = () => {
             placeholder="Email"
             onChange={(e) => setEmail(e.target.value)}
             className="outfit"
+            disabled={isLoading}
           />
           <input
             type="password"
             placeholder="Password"
             onChange={(e) => setPassword(e.target.value)}
             className="outfit"
-          />
-          <Loader 
-            title="Login" 
-            isLoading={isLoading && isFormFilled()}
             disabled={isLoading}
-            type="submit" 
           />
 
-          {error && <div> {error}</div>}
+          <Loader
+            title="Login"
+            isLoading={isLoading && isFormFilled()}
+            disabled={isLoading}
+            type="submit"
+          />
+
+          {/* New: waking up message while loading */}
+          {isLoading && isFormFilled() && (
+            <div className="login-waking">
+              <span className="login-spinner" />
+              <span>Waking up the server.... This may take a few seconds because we are using a free instance. Once ready, you should be able to log in. </span>
+            </div>
+          )}
+
+          {error && <div>{error}</div>}
         </form>
         <p className="outfit">
           Don't have an account? <Link to="/auth/signup">Sign Up</Link>

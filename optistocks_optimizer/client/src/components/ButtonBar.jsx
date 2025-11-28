@@ -1,57 +1,74 @@
-import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import "../styles/components/Forms/ButtonBar.css";
+
 
 export default function ButtonBar({ companyId }) {
-    const navigate = useNavigate();
-    const location = useLocation();
-    const currentPath = location.pathname;
+  const navigate = useNavigate();
+  const location = useLocation();
+  const currentPath = location.pathname;
 
-    return (
-        <div className="stocks_dashboard_menu">
-            <div className="stocks_dashboard_menu_inner_1"></div>
-            <div className="stocks_dashboard_menu_inner_2">
-                {currentPath !== `/dashboard/companies/${companyId}/data` && (
-                    <button
-                        className="stocks_dashboard_menu_inner_button sora"
-                        onClick={() => navigate(`/dashboard/companies/${companyId}/data`)}
-                    >
-                        Analytics
-                    </button>
-                )}
-                {currentPath !== `/dashboard/companies/${companyId}/stocks` && (
-                    <button
-                        className="stocks_dashboard_menu_inner_button sora"
-                        onClick={() => navigate(`/dashboard/companies/${companyId}/stocks`)}
-                    >
-                        Stocks
-                    </button>
-                )}
-                {currentPath !== `/dashboard/companies/${companyId}/prediction` && (
-                    <button
-                        className="stocks_dashboard_menu_inner_button sora"
-                        onClick={() => navigate(`/dashboard/companies/${companyId}/prediction`)}
-                    >
-                        Prediction
-                    </button>
-                )}
-                {currentPath !== `/dashboard/companies/${companyId}/chat` && (
-                    <button
-                        className="stocks_dashboard_menu_inner_button sora"
-                        onClick={() => navigate(`/dashboard/companies/${companyId}/chat`)}
-                    >
-                        Chat
-                    </button>
-                )}
-                {currentPath !== `/dashboard/companies/${companyId}/desired-path` && (
-                    <button
-                        className="stocks_dashboard_menu_inner_button sora small-text-button"
-                        onClick={() => window.location.href = 'https://optistocks-demand-forecasting.streamlit.app/'}
-                    >
-                        FORECAST
-                    </button>
-                )}
-                
-            </div>
-        </div>
-    );
+  const isActive = (path) => currentPath === path;
+
+  return (
+    <div className="buttonbar-wrapper">
+      <div className="buttonbar-rail">
+        <button
+          className={`buttonbar-btn ${
+            isActive(`/dashboard/companies/${companyId}/stocks`) ? "active" : ""
+          }`}
+          onClick={() =>
+            navigate(`/dashboard/companies/${companyId}/stocks`)
+          }
+        >
+          Stocks
+        </button>
+
+        <button
+          className={`buttonbar-btn ${
+            isActive(`/dashboard/companies/${companyId}/data`) ? "active" : ""
+          }`}
+          onClick={() =>
+            navigate(`/dashboard/companies/${companyId}/data`)
+          }
+        >
+          Analytics
+        </button>
+
+        <button
+          className={`buttonbar-btn ${
+            isActive(`/dashboard/companies/${companyId}/prediction`) ? "active" : ""
+          }`}
+          onClick={() =>
+            navigate(`/dashboard/companies/${companyId}/prediction`)
+          }
+        >
+          Prediction
+        </button>
+
+        <button
+          className={`buttonbar-btn ${
+            isActive(`/dashboard/companies/${companyId}/chat`) ? "active" : ""
+          }`}
+          onClick={() =>
+            navigate(`/dashboard/companies/${companyId}/chat`)
+          }
+        >
+          Chat
+        </button>
+
+        <button
+          className="buttonbar-btn forecast"
+          onClick={() =>
+            window.open(
+              "https://optistocks-demand-forecasting.streamlit.app/",
+              "_blank"
+            )
+          }
+        >
+          Forecast
+        </button>
+      </div>
+    </div>
+  );
 }

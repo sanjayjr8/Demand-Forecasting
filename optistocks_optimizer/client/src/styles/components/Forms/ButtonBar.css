@@ -1,0 +1,71 @@
+.buttonbar-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.buttonbar-rail {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.6rem;
+  background: rgba(15, 14, 23, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0 25px rgba(0, 255, 170, 0.08);
+}
+
+.buttonbar-btn {
+  padding: 0.65rem 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 0.7rem;
+  border: 1px solid transparent;
+  background: #13121c;
+  color: var(--headline);
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+/* Hover glow */
+.buttonbar-btn:hover {
+  background: rgba(0, 255, 170, 0.08);
+  box-shadow: 0 0 12px rgba(0, 255, 170, 0.35);
+  transform: translateY(-1px);
+}
+
+/* Active button */
+.buttonbar-btn.active {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 255, 170, 0.6),
+    rgba(0, 200, 140, 0.9)
+  );
+  color: #03110c;
+  box-shadow: 0 0 18px rgba(0, 255, 170, 0.7);
+}
+
+/* Forecast button (special) */
+.buttonbar-btn.forecast {
+  background: linear-gradient(135deg, #00ffaa, #00c58a);
+  color: #02100b;
+}
+
+.buttonbar-btn.forecast:hover {
+  box-shadow: 0 0 25px rgba(0, 255, 170, 0.9);
+  transform: translateY(-2px) scale(1.03);
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .buttonbar-rail {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttonbar-btn {
+    font-size: 0.85rem;
+    padding: 0.6rem 1rem;
+  }
+}

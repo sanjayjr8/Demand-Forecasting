@@ -7,174 +7,287 @@
   z-index: -1000;
 }
 
-/* dashboard layout  */
+/* error */
+.prediction_error {
+  padding: 2rem;
+  color: #ff8a80;
+  text-align: center;
+}
+
+/* --------- LAYOUT --------- */
+
 .app_prediction_dashboard {
   display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-wrap: wrap;
-  background-color: var(--background-color);
-  /* padding-top: 5rem; */
-  /* background-color: red; */
-}
-
-/* dashboard layout inner  */
-.prediction_dashboard {
-  width: 32.5rem;
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  height: inherit;
-}
-
-/* dashboard heading  */
-.prediction_dashboard_heading {
-  width: 32.5rem;
-  position: sticky;
-  top: 7rem;
-  font-size: 2rem;
-  line-height: 3.5rem;
-  font-weight: 700;
-  color: var(--headline);
-  background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  align-items: start;
   flex-direction: column;
-  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  background-color: var(--background-color);
+  padding: 1.5rem 4rem 2.5rem;
 }
 
-.prediction_dashboard_button {
-  color: var(--button-text);
-  background-color: var(--button);
-  border: 0.15rem solid var(--background-color);
-  border-radius: 0.5rem;
-  text-decoration: none;
-  cursor: pointer;
-  outline: none;
-  padding: 1.2rem 1.3rem;
-  font-size: 1.1rem;
-  font-weight: 700;
+/* header section */
+.prediction_header {
+  margin: 1.5rem 0 1.8rem;
+  color: var(--headline);
+}
+
+.prediction_header_text {
+  max-width: 520px;
+}
+
+.prediction_title {
+  font-size: 2.1rem;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+.prediction_subtitle {
+  font-size: 0.95rem;
+  color: var(--paragraph);
+  opacity: 0.9;
+}
+
+/* main container */
+.prediction_dashboard {
+  width: 100%;
+}
+
+/* loading skeleton */
+.prediction_loading {
+  display: grid;
+  gap: 0.8rem;
   margin-top: 1rem;
 }
 
-.main_left_button {
-  margin-top: 1rem;
+.prediction_skeleton-row {
+  height: 70px;
+  border-radius: 14px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.02) 0%,
+    rgba(255, 255, 255, 0.05) 50%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+  background-size: 200% 100%;
+  animation: prediction-skeleton-shimmer 1.4s linear infinite;
 }
 
-/* dashboard blocks grouped */
-.prediction_dashboard_blocks {
-  z-index: inherit;
+@keyframes prediction-skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 
-/* single dashboard block  */
-.prediction_dashboard_block {
-  background-color: var(--headline);
-  padding: 2.5rem;
-  margin-bottom: 2rem;
-  border-radius: 3px;
-  width: 32.5rem;
-  cursor: pointer;
+/* --------- PREDICTION TILES --------- */
+
+.prediction_tiles {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.4rem;
 }
 
-.prediction_dashboard_block_name {
-  font-size: 2rem;
-  line-height: 1.875rem;
-  font-weight: 700;
+/* tile */
+.prediction_tile {
+  background: radial-gradient(
+    circle at top left,
+    #c7eedc 0%,
+    #bce7d5 45%,
+    #a9dcc6 100%
+  );
+  border-radius: 20px;
+  padding: 1.4rem 1.6rem 1.3rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+  color: #020308;
+  position: relative;
+  overflow: hidden;
+  cursor: default;
+  transition:
+    transform 0.16s ease,
+    box-shadow 0.16s ease;
+}
+
+.prediction_tile::before {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 255, 170, 0.28) 0,
+    rgba(0, 255, 170, 0) 70%
+  );
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.prediction_tile:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 0 0 1px rgba(0, 255, 170, 0.3),
+    0 0 25px rgba(0, 255, 170, 0.55),
+    0 24px 55px rgba(0, 0, 0, 0.7);
+}
+
+/* header row */
+.prediction_tile_header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 
-.block_name_tag {
-  color: var(--card-highlights);
-  font-size: 1.125rem;
-  font-weight: 500;
+.prediction_tile_label {
+  font-size: 0.83rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(2, 3, 8, 0.75);
 }
 
-.prediction_dashboard_block_address {
-  color: var(--paragraph);
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.7;
-  margin-bottom: 0.6rem;
+.prediction_tag {
+  font-size: 0.78rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(2, 3, 8, 0.12);
+  color: rgba(2, 3, 8, 0.8);
 }
 
-.contact_span {
-  color: var(--background-color);
-  font-size: 1.125rem;
+/* product name */
+.prediction_product {
+  font-size: 1.5rem;
   font-weight: 700;
+  margin-bottom: 0.7rem;
 }
 
-.prediction_dashboard_block_contactEmail {
-  color: var(--paragraph);
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.7;
-  margin-top: 0.5rem;
+/* --------- FUTURE TIMELINE --------- */
+
+.prediction_timeline {
+  position: relative;
+  /* give the timeline its own vertical space */
+  height: 3.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1.3rem;
+  padding-top: 0; /* we don't need extra padding now */
 }
 
-.prediction_dashboard_block_contactNumber {
-  color: var(--paragraph);
-  font-size: 1.1rem;
-  font-weight: 400;
-  line-height: 1.7;
+.timeline_line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.1rem;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 3, 8, 0.2),
+    rgba(0, 255, 170, 0.65)
+  );
 }
 
-/* media query */
+.timeline_dot {
+  position: absolute;
+  top: 0.8rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #020308;
+  background: var(--headline);
+}
+
+.timeline_dot--current {
+  left: 6px;
+}
+
+.timeline_dot--future {
+  right: 8px;
+  background: #00e676;
+}
+
+/* glow moving forward */
+.timeline_glow {
+  position: absolute;
+  top: 0.45rem;
+  left: 0;
+  width: 60%;
+  height: 2.1rem;
+  background: radial-gradient(
+    circle at right,
+    rgba(0, 255, 170, 0.4),
+    rgba(0, 255, 170, 0)
+  );
+  animation: timeline-glow-move 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* labels */
+.timeline_label {
+  position: absolute;
+  top: 1.6rem;
+  font-size: 0.72rem;
+  color: rgba(2, 3, 8, 0.75);
+}
+
+.timeline_label--future {
+  right: 0;
+}
+
+/* --------- QUANTITY BLOCK --------- */
+
+.prediction_quantity_block {
+  background: rgba(2, 3, 8, 0.08);
+  border-radius: 14px;
+  padding: 0.8rem 0.9rem 0.65rem;
+  box-shadow: 0 12px 24px rgba(2, 3, 8, 0.18);
+  backdrop-filter: blur(4px);
+}
+
+.prediction_quantity_label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgba(2, 3, 8, 0.75);
+  margin-bottom: 0.3rem;
+}
+
+.prediction_quantity_value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.prediction_hint {
+  font-size: 0.78rem;
+  color: rgba(2, 3, 8, 0.75);
+}
+
+/* --------- MEDIA QUERIES --------- */
+
 @media (max-width: 1056px) {
-  .prediction_dashboard_heading {
-    width: 32.5rem;
-    position: static;
-    top: 0;
-  }
-  .prediction_dashboard_button {
-    margin-bottom: 1rem;
-  }
-
   .app_prediction_dashboard {
-    padding-top: 0rem;
+    padding: 1.2rem 1.5rem 2.3rem;
   }
 }
 
 @media (max-width: 575px) {
-  .prediction_dashboard_heading {
+  .prediction_title {
     font-size: 1.8rem;
-    text-align: start;
-    justify-content: start;
-    align-items: start;
-    margin-left: 1rem;
   }
 
-  .prediction_dashboard_block {
-    width: 100%;
-    padding: 2.5rem;
-    width: 90vw;
-    margin-bottom: 1rem;
-  }
-
-  .prediction_dashboard_button {
-    padding: 1rem 1.2rem;
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-top: 1rem;
+  .prediction_tile {
+    padding: 1.3rem 1.3rem 1.2rem;
   }
 }
 
 @media (max-width: 400px) {
-  .prediction_dashboard_heading {
-    font-size: 1.8rem;
-    text-align: start;
+  .app_prediction_dashboard {
+    padding: 1.2rem 1.2rem 2rem;
   }
 
-  .prediction_dashboard_block {
-    width: 100%;
-    padding: 2rem;
-    margin-bottom: 1rem;
-    width: 90vw;
+  .prediction_tile {
+    padding: 1.2rem 1.15rem 1.1rem;
   }
 }

@@ -1,0 +1,56 @@
+# -------------------------
+# OS / Editor junk
+# -------------------------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+myenv/
+.env/
+.env.*
+
+# -------------------------
+# Streamlit
+# -------------------------
+.streamlit/secrets.toml
+
+# -------------------------
+# Node / React
+# -------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -------------------------
+# Logs
+# -------------------------
+logs/
+*.log
+
+# -------------------------
+# Large / unnecessary media
+# -------------------------
+*.mp4
+*.mov
+*.avi
+
+# -------------------------
+# CSVs (ONLY ignore if demo data)
+# -------------------------
+# Uncomment if you DON'T want to expose raw datasets
+# *.csv

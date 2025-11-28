@@ -9,6 +9,7 @@ import StocksDashboard from "./pages/StocksDashboard";
 import DataDashboard from "./pages/DataDashboard";
 import PredictionDashboard from "./pages/PredictionDashboard";
 import ChatDashboard from "./pages/ChatDashboard";
+
 import { useAuthContext } from "./hooks/useAuthContext";
 
 function App() {
@@ -32,6 +33,18 @@ function App() {
                 user ? <Navigate to="/dashboard/companies" /> : <Signup />
               }
             />
+
+            
+
+            <Route
+              path="/company/:companyId"
+              element={
+                <Navigate to="/dashboard/companies/:companyId/stocks" replace />
+              }
+            />
+            <Route path="*" element={<Navigate to="/" />} />
+
+
             <Route
               path="/auth/login"
               element={

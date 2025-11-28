@@ -21,8 +21,8 @@ html {
 } 
 .prediction_dashboard_block_name,  
 .data_dashboard_block_name {  
-    color: black; /* Sets the text color to black */  
-} 
+  color: black;
+}
 
 :root {
   --background-color: #0f0e17;
@@ -32,4 +32,99 @@ html {
   --button-text: #fffffe;
   --sub-headline: #2e2f3e;
   --card-highlights: #e53170;
+}
+
+/* ========================= */
+/*  Auth link + truck anim   */
+/* ========================= */
+
+.auth-link-button {
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+}
+
+.auth-link-button:hover {
+  text-decoration: underline;
+}
+
+/* full-screen overlay when transitioning to login */
+.truck-overlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at center, #021710 0%, #020308 55%, #000 100%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+/* the whole truck slides across */
+.truck {
+  width: 220px;
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  margin-left: -260px; /* start fully off-screen left */
+  animation: drive-across 1.2s ease-in-out forwards;
+}
+
+/* main lorry body */
+.truck-body {
+  width: 160px;
+  height: 80px;
+  background: linear-gradient(135deg, #00e676, #ffab40);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* front cabin */
+.truck-cabin {
+  width: 80px;
+  height: 65px;
+  background: linear-gradient(135deg, #00c853, #ff9100);
+  border-radius: 12px 12px 6px 0;
+  margin-left: -30px;
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.5);
+}
+
+/* wheels */
+.truck-wheel {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #121212;
+  border: 4px solid #2e2e2e;
+  position: relative;
+  top: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+.wheel-left {
+  margin-left: -150px;
+  margin-right: 60px;
+}
+
+.wheel-right {
+  margin-right: 0;
+}
+
+/* hub / gradient center */
+.truck-wheel::after {
+  content: "";
+  position: absolute;
+  inset: 7px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #00e676 0%, #ffab40 60%, #111 100%);
+}
+
+/* slide animation */
+@keyframes drive-across {
+  to {
+    transform: translateX(120vw);
+  }
 }

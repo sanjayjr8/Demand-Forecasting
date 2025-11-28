@@ -13,11 +13,14 @@ export default function CompanyDashboard() {
 
   useEffect(() => {
     const fetchCompanies = async () => {
-      const response = await fetch("https://optistocks-optimizer.onrender.com/api/dashboard/companies", {
-        headers: {
-          Authorization: `Bearer ${user.token}`,
-        },
-      });
+      const response = await fetch(
+        "https://optistocks-optimizer.onrender.com/api/dashboard/companies",
+        {
+          headers: {
+            Authorization: `Bearer ${user.token}`,
+          },
+        }
+      );
       const json = await response.json();
 
       if (!response.ok) {
@@ -28,6 +31,7 @@ export default function CompanyDashboard() {
         dispatch({ type: "SET_COMPANIES", payload: json });
       }
     };
+
     if (user) {
       fetchCompanies();
     }
@@ -48,19 +52,32 @@ export default function CompanyDashboard() {
     navigate(`/dashboard/companies/${companyId}/stocks`);
   };
 
+  const handleAddCompany = () => setShowForm(true);
+
   return (
     <>
       <div className="global"></div>
+
       <main className="app_company_dashboard">
+        {/* header */}
         <div className="company_dashboard_heading sora">
-          All your companies are <br /> listed here <br />
+          <div className="company_dashboard_heading_text">
+            <h1 className="companies-title">Your Companies</h1>
+            <p className="companies-subtitle outfit">
+              Manage and monitor all your supply chain entities from a single
+              place.
+            </p>
+          </div>
+
           <button
             className="company_dashboard_button sora"
-            onClick={() => setShowForm(true)}
+            onClick={handleAddCompany}
           >
-            Add Company
+            + Add Company
           </button>
         </div>
+
+        {/* cards grid */}
         <div className="company_dashboard">
           <div className="company_dashboard_blocks">
             {companies &&
@@ -71,25 +88,33 @@ export default function CompanyDashboard() {
                   onClick={() => handleCompanyClick(company._id)}
                 >
                   <div className="company_dashboard_block_name sora">
-                    <div className="block_name_name"> {company.name}</div>
+                    <div className="block_name_name">{company.name}</div>
                     <div className="block_name_tag">#{index + 1}</div>
                   </div>
+
                   <div className="company_dashboard_block_address outfit">
                     {company.address}
                   </div>
+
                   <div className="company_dashboard_block_contactEmail outfit">
-                    <span className="contact_span"> mail: </span>
+                    <span className="contact_span">mail:</span>{" "}
                     {company.contactEmail}
                   </div>
+
                   <div className="company_dashboard_block_contactNumber outfit">
-                    <span className="contact_span"> phone: </span>
+                    <span className="contact_span">phone:</span>{" "}
                     {company.contactNumber}
+                  </div>
+
+                  <div className="company_dashboard_block_footer outfit">
+                    <span className="company_pill">View dashboard →</span>
                   </div>
                 </div>
               ))}
           </div>
         </div>
       </main>
+
       {showForm && <CompanyForm onClose={() => setShowForm(false)} />}
     </>
   );

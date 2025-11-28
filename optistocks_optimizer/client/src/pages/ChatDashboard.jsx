@@ -61,40 +61,90 @@ export default function ChatDashboard() {
     }
   }, [user, companyId]);
 
+  const isSendDisabled =
+    isSending || isOrdered || !predictions || predictions.length === 0;
+
   return (
     <>
       <div className="global"></div>
       <main className="app_chat_dashboard">
         <ButtonBar companyId={companyId} />
-        <div className="chat_dashboard_heading sora">
-          Order Now!
-          <button
-            className="chat_dashboard_button sora"
-            onClick={sendMessage}
-            disabled={isSending}
-          >
-            Send
-          </button>
-          {isOrdered && <FaCheckCircle className="check-icon-heading" />}
-        </div>
-        <div className={`chat_dashboard ${isOrdered ? "fade-out" : ""}`}>
+
+        {/* Header */}
+        <section className="chat_header sora">
+          <div className="chat_header_text">
+            <h1 className="chat_title">Smart Re-order</h1>
+            <p className="chat_subtitle outfit">
+              Review the recommended purchase quantities and send a consolidated
+              order to your supplier in one click.
+            </p>
+          </div>
+
+          <div className="chat_header_actions">
+            {isOrdered && (
+              <div className="chat_status success outfit">
+                <FaCheckCircle className="chat_status_icon" />
+                <span>Order placed for recommended quantities</span>
+              </div>
+            )}
+
+            <button
+              className="chat_dashboard_button sora"
+              onClick={sendMessage}
+              disabled={isSendDisabled}
+            >
+              {isSending
+                ? "Sending..."
+                : isOrdered
+                ? "Sent"
+                : "Send Order"}
+            </button>
+          </div>
+        </section>
+
+        {/* Content */}
+        <section
+          className={`chat_dashboard ${isOrdered ? "fade-out" : ""}`}
+        >
+          {(!predictions || predictions.length === 0) && (
+            <div className="chat_empty outfit">
+              No recommended purchases yet. Generate predictions first, then
+              you’ll see a summary here.
+            </div>
+          )}
+
           <div className="chat_dashboard_blocks">
             {predictions.map((prediction, index) => (
-              <div className="chat_dashboard_block" key={index}>
+              <article className="chat_dashboard_block" key={index}>
+                {/* Top row: stock + index */}
                 <div className="chat_dashboard_block_name sora">
                   <div className="block_name_name">
-                    Stock: {prediction.stockName}
+                    {prediction.stockName}
                   </div>
                   <div className="block_name_tag">#{index + 1}</div>
                 </div>
-                <div className="chat_dashboard_block_info outfit">
-                  <span className="prediction_span">Purchase Quantity: </span>
-                  {prediction.purchaseQuantity}
+
+                {/* Middle row: “message” style bubble */}
+                <div className="chat_line">
+                  <div className="chat_avatar_circle" />
+                  <div className="chat_message outfit">
+                    <span className="prediction_span">
+                      Suggested purchase:
+                    </span>{" "}
+                    <strong>{prediction.purchaseQuantity}</strong> units
+                    for this product.
+                  </div>
                 </div>
-              </div>
+
+                {/* Footer hint */}
+                <p className="chat_hint outfit">
+                  This quantity comes from your latest demand prediction. You
+                  can adjust it with your supplier if needed.
+                </p>
+              </article>
             ))}
           </div>
-        </div>
+        </section>
       </main>
     </>
   );

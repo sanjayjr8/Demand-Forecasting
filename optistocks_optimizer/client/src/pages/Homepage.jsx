@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import AOS from "aos";
@@ -9,6 +9,7 @@ import "../styles/static/Homepage.css";
 
 export default function Homepage() {
   const navigate = useNavigate();
+  const [showTransition, setShowTransition] = useState(false);
 
   useEffect(() => {
     // Initialize AOS with custom settings
@@ -16,12 +17,18 @@ export default function Homepage() {
       duration: 800,
       offset: 100,
       once: true,
-      easing: 'ease-out-cubic'
+      easing: "ease-out-cubic",
     });
   }, []);
 
   const handleGetStartedClick = () => {
-    navigate("/auth/signup");
+    if (showTransition) return; // avoid double click
+    setShowTransition(true);
+
+    // duration must match truck animation (see App.css)
+    setTimeout(() => {
+      navigate("/auth/signup");
+    }, 1200);
   };
 
   // Animation variants for features
@@ -30,9 +37,9 @@ export default function Homepage() {
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -42,9 +49,9 @@ export default function Homepage() {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
@@ -93,20 +100,20 @@ export default function Homepage() {
             transition={{ duration: 0.8 }}
             className="hero_title"
           >
-            Revolutionize Your <br /> 
-            <span className="gradient_text">Inventory Management</span> <br /> 
+            Revolutionize Your <br />
+            <span className="gradient_text">Inventory Management</span> <br />
             with OptiStocks
           </motion.h1>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
             className="hero_description"
           >
-            The ultimate solution for seamless Inventory management and
-            demand forecasting. Say goodbye to stockouts and overstocking,
-            and embrace a smarter way to manage your inventory with OptiStocks
+            The ultimate solution for seamless Inventory management and demand
+            forecasting. Say goodbye to stockouts and overstocking, and embrace
+            a smarter way to manage your inventory with OptiStocks
           </motion.p>
 
           <motion.div
@@ -131,7 +138,6 @@ export default function Homepage() {
           ></lottie-player>
         </div>
       </main>
-      
 
       <section className="features_section" id="features">
         <motion.div
@@ -141,50 +147,54 @@ export default function Homepage() {
           variants={containerVariants}
           className="features_container"
         >
-          <motion.div 
-            className="section_header"
-            variants={itemVariants}
-          >
+          <motion.div className="section_header" variants={itemVariants}>
             <h2 className="section_title">What We Bring to the Table?</h2>
             <p className="section_description">
-            An all-inclusive stock management solution crafted to simplify your processes and increase operational effectiveness.
+              An all-inclusive stock management solution crafted to simplify
+              your processes and increase operational effectiveness.
             </p>
           </motion.div>
 
           <div className="features_grid">
             {[
-              {  
-                "title": "Real-Time Inventory Monitoring",  
-                "content": "Keep track of your inventory levels as they change. Our system offers precise and immediate updates on stock availability, ensuring you’re always stocked with necessary items."  
-              },  
-              {  
-                "title": "Streamlined Order Processing",  
-                "content": "Enhance your order management with our automated systems. From creating purchase orders to processing sales orders, our application simplifies the workflow, minimizing manual tasks and reducing the risk of errors."  
-              },  
-              {  
-                "title": "Comprehensive Analytics and Reporting",  
-                "content": "Unlock crucial insights into your business with our powerful reporting features. Examine sales patterns, track inventory status, and make informed decisions to enhance your inventory management."  
-              },  
-              {  
-                "title": "Demand Forecasting",  
-                "content": "Utilize our sophisticated forecasting tools to predict customer demand accurately. By analyzing historical data and trends, you can ensure optimal inventory levels and improve customer satisfaction."  
-              },  
-              {  
-                "title": "SARIMA Models for Sales Forecasting",  
-                "content": "Leverage SARIMA (Seasonal Autoregressive Integrated Moving Average) models to enhance your sales predictions. This advanced statistical approach helps you account for seasonality and trends, leading to more accurate forecasting and better inventory planning."  
-              },  
-              {  
-                "title": "Proactive Inventory Management",  
-                "content": "Our application empowers you to proactively manage your stock by providing insights into future trends. Anticipate changes in demand and adjust your inventory strategy accordingly to avoid stockouts and overstock situations."  
-              } 
+              {
+                title: "Real-Time Inventory Monitoring",
+                content:
+                  "Keep track of your inventory levels as they change. Our system offers precise and immediate updates on stock availability, ensuring you’re always stocked with necessary items.",
+              },
+              {
+                title: "Streamlined Order Processing",
+                content:
+                  "Enhance your order management with our automated systems. From creating purchase orders to processing sales orders, our application simplifies the workflow, minimizing manual tasks and reducing the risk of errors.",
+              },
+              {
+                title: "Comprehensive Analytics and Reporting",
+                content:
+                  "Unlock crucial insights into your business with our powerful reporting features. Examine sales patterns, track inventory status, and make informed decisions to enhance your inventory management.",
+              },
+              {
+                title: "Demand Forecasting",
+                content:
+                  "Utilize our sophisticated forecasting tools to predict customer demand accurately. By analyzing historical data and trends, you can ensure optimal inventory levels and improve customer satisfaction.",
+              },
+              {
+                title: "SARIMA Models for Sales Forecasting",
+                content:
+                  "Leverage SARIMA (Seasonal Autoregressive Integrated Moving Average) models to enhance your sales predictions. This advanced statistical approach helps you account for seasonality and trends, leading to more accurate forecasting and better inventory planning.",
+              },
+              {
+                title: "Proactive Inventory Management",
+                content:
+                  "Our application empowers you to proactively manage your stock by providing insights into future trends. Anticipate changes in demand and adjust your inventory strategy accordingly to avoid stockouts and overstock situations.",
+              },
             ].map((feature, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
                 className="blocks_block"
-                whileHover={{ 
+                whileHover={{
                   scale: 1.02,
-                  boxShadow: "0 0 30px rgba(0, 255, 170, 0.2)"
+                  boxShadow: "0 0 30px rgba(0, 255, 170, 0.2)",
                 }}
               >
                 <h3 className="block_heading">{feature.title}</h3>
@@ -200,7 +210,7 @@ export default function Homepage() {
           <div className="footer_brand">
             <img src={logo} className="footer_logo" alt="OptiStocks Logo" />
           </div>
-          
+
           <div className="footer_links">
             <h3 className="footer_title">Find Us</h3>
             <ul className="social_links">
@@ -212,17 +222,33 @@ export default function Homepage() {
                   className="social_link"
                 >
                   SANJAY J
-                  <img src={linkedin} className="linkedin_icon" alt="LinkedIn" />
+                  <img
+                    src={linkedin}
+                    className="linkedin_icon"
+                    alt="LinkedIn"
+                  />
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="footer_bottom">
           <p>© 2024 OptiStocks. All rights reserved.</p>
         </div>
       </footer>
+
+      {/* green–orange lorry transition when starting */}
+      {showTransition && (
+        <div className="truck-overlay">
+          <div className="truck">
+            <div className="truck-body" />
+            <div className="truck-cabin" />
+            <div className="truck-wheel wheel-left" />
+            <div className="truck-wheel wheel-right" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

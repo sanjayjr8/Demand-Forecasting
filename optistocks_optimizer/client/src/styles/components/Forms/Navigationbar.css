@@ -1,0 +1,97 @@
+/* ===== HEADER ROOT ===== */
+.app_header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: linear-gradient(180deg, #060608 0%, #040406 100%);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* ===== HEADER CONTENT ===== */
+.header {
+  max-width: 1200px;
+  height: 105px;      /* was 90px */
+  margin: 0 auto;
+  padding: 0 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* ===== LEFT: LOGO ===== */
+.header_left {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* THIS IS THE MOST IMPORTANT PART */
+.left_logo {
+  height: 110px;
+  transform: translateY(-4px); /* 🔼 subtle lift */
+}
+
+
+
+/* ===== RIGHT: BUTTONS ===== */
+.header_right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Button alignment safety */
+.header_right button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+}
+
+/* ===== SUBTLE GLOW LINE ===== */
+.app_header::after {
+  content: "";
+  position: sticky;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(0, 255, 170, 0.35),
+    transparent
+  );
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1.25rem;
+    height: 80px;
+  }
+
+  .left_logo {
+    height: 52px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 0 1rem;
+    height: 72px;
+  }
+
+  .left_logo {
+    height: 44px;
+    max-width: 220px;
+  }
+
+  .header_right {
+    gap: 0.5rem;
+  }
+}

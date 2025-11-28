@@ -62,3 +62,29 @@
   color: var(--button);
   text-decoration: none;
 }
+/* Loading strip under login button */
+.login-waking {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: #00f5a0; /* neon green-ish to match your theme */
+  opacity: 0.95;
+}
+
+/* Small circular spinner */
+.login-spinner {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 245, 160, 0.25);
+  border-top-color: #00f5a0;
+  animation: login-spin 0.7s linear infinite;
+}
+
+@keyframes login-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

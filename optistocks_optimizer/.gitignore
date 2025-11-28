@@ -1,3 +1,43 @@
+# =====================
+# Environment / Secrets
+# =====================
+.env
+.env.*
+config.env
+
+# =====================
+# Node / React
+# =====================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =====================
+# Build output
+# =====================
+dist/
+build/
+
+# =====================
+# OS / Editor junk
+# =====================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# =====================
+# Logs
+# =====================
+logs/
+*.log
+
+# =====================
+# Optional: local cache
+# =====================
+.cache/
+
 server/.env
 .git
 # server logs
