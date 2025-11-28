@@ -61,7 +61,7 @@ export default function ButtonBar({ companyId }) {
           className="buttonbar-btn forecast"
           onClick={() =>
             window.open(
-              "https://optistocks-demand-forecasting.streamlit.app/",
+              "https://demandforecast1.streamlit.app/",
               "_blank"
             )
           }
