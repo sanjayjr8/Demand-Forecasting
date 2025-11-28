@@ -1,99 +1,148 @@
-# OptiStocks 
-
-![OptiStocks Logo](About.jpg)
-
-## 🚀 Revolutionize Your Supply Chain Management
-
-Welcome to **OptiStocks**, your all-in-one solution for inventory management, demand forecasting, and analytics. With a sleek interface, robust backend, and powerful machine learning models, OptiStocks makes managing your inventory a breeze. 
+<!-- Logo -->
+<p align="center">
+  <img src="optistocks_optimizer/client/src/assets/wide_logo.png" alt="OptiStocks Logo" width="800"/>
+</p>
 
 ---
 
-## 🌟 Key Features
+# OptiStocks – Intelligent Inventory Optimization & Demand Forecasting 🚚📊
 
-### 📊 Real-Time Inventory Monitoring
-Track inventory levels in real time with precise updates to ensure optimal stock availability.
+OptiStocks is a **full-stack inventory management and demand forecasting platform** designed for modern businesses to monitor inventory, analyze sales performance, and **predict future demand using ARIMA/SARIMA models**.
 
-### 📦 Streamlined Order Processing
-Automate your purchase and sales orders, reducing manual tasks and minimizing errors.
-
-### 📈 Comprehensive Analytics and Reporting
-Get actionable insights with in-depth reports on sales trends, inventory status, and demand forecasting.
-
-### 🔮 Demand Forecasting
-Use advanced ARIMA and SARIMA models to predict customer demand and optimize inventory planning.
-
-### 🤖 Machine Learning Models
-Leverage powerful ML models deployed via **Streamlit** for forecasting and sales predictions.
-
-### 📲 Twilio Integration
-Stay updated with stock alerts and notifications via Twilio integration.
+The system combines an intuitive web dashboard with a powerful time-series forecasting engine, helping companies **reduce stockouts, avoid overstocking, and make data-driven purchasing decisions**.
 
 ---
 
-## 🛠️ Tech Stack
+## ✨ Key Features
 
-### Frontend
-- ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=white)  
-- ![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white)
-- ![CSS](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white)
-- ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black)
-- ![Vercel](https://img.shields.io/badge/-Vercel-000000?logo=vercel&logoColor=white)
-
-### Backend
-- ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=node.js&logoColor=white)
-- ![Express.js](https://img.shields.io/badge/-Express.js-000000?logo=express&logoColor=white)
-
-### Database
-- ![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?logo=mongodb&logoColor=white)
-
-### Machine Learning
-- ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
-- ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?logo=streamlit&logoColor=white)
-- ![Statsmodels](https://img.shields.io/badge/-Statsmodels-008080?logo=python&logoColor=white)
-- ![Plotly](https://img.shields.io/badge/-Plotly-3F4F75?logo=plotly&logoColor=white)
-
-### Deployment
-- ![Render](https://img.shields.io/badge/-Render-46E3B7?logo=render&logoColor=white)
-
-### Communication
-- ![Twilio](https://img.shields.io/badge/-Twilio-F22F46?logo=twilio&logoColor=white)
+- Add & manage companies and their stocks
+- Real-time inventory analytics & KPIs
+- ARIMA / SARIMA based demand forecasting
+- Interactive visualizations for historical & forecasted sales
+- Order recommendations dashboard
+- Secure authentication (JWT-based)
+- Deployed full-stack application with ML integration
 
 ---
 
-## 🖥️ Installation and Usage
+## 🛠 Tech Stack
 
-### Prerequisites
-- Node.js
-- Python (for ML models)
-- MongoDB
+### 🔹 Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)
 
+### 🔹 Backend
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb)
 
----
-
-## 🖼️ UI Preview
-
-| Feature               | Screenshot                 |
-|-----------------------|----------------------------|
-| Inventory Dashboard   | ![Dashboard](Banner1.jpg) |
-| Forecasting Module    | ![Forecast](Banner2.jpg)  |
-
----
-
-## 🤝 Connect with Me
-
-[![GitHub](https://img.shields.io/badge/GitHub-100000?logo=github&logoColor=white)](https://github.com/sanjayjr8)  
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sanjayj08/)
+### 🔹 Machine Learning / Analytics
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit)
+![Statsmodels](https://img.shields.io/badge/Statsmodels-0A497B?style=for-the-badge)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly)
 
 ---
 
-## 📜 License
+## 🚀 Deployment
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+| Component | Platform | Link |
+|---------|----------|------|
+| Frontend | Vercel | https://optistocks.vercel.app *(example)* |
+| Backend API | Render | https://optistocks-optimizer.onrender.com |
+| ARIMA Forecasting (ML) | Streamlit Cloud | https://demandforecast1.streamlit.app |
+
+> ⚠️ **Note:** Render uses free instances.  
+> The backend may take **5–10 seconds to wake up** on first request.
 
 ---
 
-### 💡 What We Bring to the Table?
+## 🧪 Bonus & Evaluation Highlights
 
-**OptiStocks** combines cutting-edge technology with user-friendly features to streamline your inventory management processes. Start optimizing your supply chain today with **OptiStocks**! 🌟
+✅ Attempted **Full-Stack Track (Web + API + Database)**  
+✅ Implemented **authentication using JWT**  
+✅ Integrated **Machine Learning pipeline (ARIMA/SARIMA)**  
+✅ Separate ML deployment using **Streamlit Cloud**  
+✅ Deployed frontend & backend separately  
+✅ Focused on **UX, dark theme, smooth navigation & visual clarity**  
+✅ Clean project structure & documentation  
 
-[![Launch](https://img.shields.io/badge/Launch-100000?logo=rocket&logoColor=white)](https://demand-forecasting-pink.vercel.app) Visit **OptiStocks**, your all-in-one solution for inventory management, demand forecasting, and analytics. With a sleek interface, robust backend, and powerful machine learning models, OptiStocks makes managing your inventory a breeze.
+---
+
+## 🖥 Local Setup Instructions
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/sanjayjr8/Demand-Forecasting.git
+cd Demand-Forecasting/optistocks_optimizer
+```
+
+### 2️⃣ Start Backend (Node + Express)
+```bash
+cd server
+npm install
+```
+
+Create a `.env` file inside `server/`:
+```env
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=10000
+```
+
+Then run:
+```bash
+npm run dev
+```
+
+Backend runs at:
+```
+http://localhost:10000
+```
+
+### 3️⃣ Start Frontend (React + Vite)
+Open a new terminal:
+```bash
+cd client
+npm install
+npm run dev
+```
+
+Frontend runs at:
+```
+http://localhost:5173
+```
+
+### 4️⃣ Run ARIMA Streamlit App (Optional – Local)
+```bash
+cd server/arima
+pip install -r requirements.txt
+streamlit run test.py
+```
+
+---
+
+## 📸 Screenshots / Demo
+
+Screenshots and screen-recording are available in the repository and deployment links above.
+
+---
+
+## 📌 Assumptions
+
+- Uploaded CSV data follows a time-series format (Month, Sales)
+- Render free tier cold start delay is expected
+- Forecasting parameters are user-controlled to demonstrate flexibility
+
+---
+
+## 👤 Author
+
+**Sanjay J**  
+Final Year B.Tech – CSE  
+GitHub: https://github.com/sanjayjr8  
+LinkedIn: https://linkedin.com/in/sanjayj08
+
+Built with focus on clean design, scalability, and real-world usability.
