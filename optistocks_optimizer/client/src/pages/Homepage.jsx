@@ -216,7 +216,7 @@ export default function Homepage() {
             <ul className="social_links">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/shaurya--jha/"
+                  
                   target="_blank"
                   rel="noopener noreferrer"
                   className="social_link"
